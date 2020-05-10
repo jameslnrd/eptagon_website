@@ -1,0 +1,467 @@
+/*============= RESET STYLE =============
+
+/*-- iPhone X Remove Gutters
+Ignore W3C Validation error for this style. --*/
+html {
+   padding: env(safe-area-inset);
+   scroll-behavior: smooth;
+
+}
+
+/*-- Body Resets --*/
+body {
+   font-family: 'Lato', sans-serif;
+   color: #505962;
+   overflow-x: hidden;
+}
+
+/*============= NAVIGATION =============*/
+.navbar-brand img{
+   height: 1.8rem;
+}
+
+.navbar-dark {
+   padding: .3rem 1rem;
+   font-size: .9rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: .1rem;
+   background-color: #222529!important;
+}
+
+.navbar-nav li {
+   padding-right: .8rem;
+}
+
+.navbar-nav .nav-link {
+   padding-top: .8rem;
+   color: white!important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+   color: #A88852!important;
+}
+
+/*============= LANDING PAGE =============*/
+
+/*-- Fixed Landing Page Section --*/
+.landing{
+   height: 100vh;
+}
+.home-inner{
+   background-image: url('../img/artwork.jpg');
+   position: fixed;
+}
+
+
+
+/*-- Landing Page Content --*/
+.caption{
+   z-index: 1;
+   position: absolute;
+   top: 40%;
+   text-align: center;
+}
+
+.caption .svg-inline--fa {
+   font-size: 2rem;
+   color: #FFFFFF;
+   transition: transform 0.5s ease;
+}
+
+.caption .svg-inline--fa:hover {
+   transform: scale(1.2);
+}
+
+.caption img{
+   width: 30rem;
+}
+
+.btn{
+   border-width: medium;
+   border-radius: 0;
+   text-transform: uppercase;
+   padding: .5rem 1.2rem ;
+}
+
+
+
+/*============= ABOUT SECTION =============*/
+
+/*-- Scrollspy Offset --*/
+.offset:before {
+   content: "";
+   height: 3rem;
+   display: block;
+   margin-top: -3rem;
+}
+
+.heading {
+   text-transform: uppercase;
+   font-weight: 700;
+   padding-bottom: 1rem;
+}
+
+.heading {
+   text-transform: uppercase;
+   font-weight: 700;
+   padding-bottom: 1rem;
+   color: #A88852;
+}
+
+.about .svg-inline--fa {
+   color: #00b3ff;
+}
+
+.intro {
+   background-color: #17191c;
+   font-size: 1.1rem;
+   font-weight: 500;
+   line-height: 1.9rem;
+}
+
+.intro .svg-inline--fa {
+   font-size: 0.7rem;
+   color: #A88852;
+}
+
+.bc-embed{
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+}
+
+.bc-iframe{
+   display: inline-block;
+}
+
+
+/*============= ARTIST SECTION =============*/
+
+.artist{
+   background-color: #17191c;
+
+}
+
+
+.artist-item img:hover{
+   transform: scale(1.05);
+   -webkit-filter: brightness(110%);
+
+}
+
+.artist-item img {
+   transition: transform .4s ease;
+}
+
+.artist .svg-inline--fa {
+   font-size: 1rem;
+   color: #A88852;
+   transition: transform 0.5s ease;
+}
+
+.artist .svg-inline--fa:hover {
+   transform: scale(1.2);
+}
+
+
+
+.artist-icon img {
+   transition: transform .4s ease;
+}
+
+.artist-icon .svg-inline--fa {
+   font-size: 1rem;
+   color: #A88852;
+   transition: transform 0.5s ease;
+}
+
+
+
+/*============= FEATURED SECTION =============*/
+
+
+.carousel-content { 
+   background-color: #17191c;
+   width: 100%;
+   padding: 60px 0 80px 0; }
+
+.carousel-content h1 { padding-top: 60px; color: #fff; }
+.carousel-content .description { margin: 30px 0 0 0; padding-bottom: 30px; }
+.carousel-content .description p { color: #fff; color: rgba(255, 255, 255, 0.8); }
+.carousel-content .description a { color: #fff; color: rgba(255, 255, 255, 0.8); border-color: #fff; border-color: rgba(255, 255, 255, 0.8); }
+.carousel-content .description a:hover,
+.carousel-content .description a:focus { color: #fff; color: rgba(255, 255, 255, 0.8); }
+
+.carousel-content .carousel-item .embed-responsive,
+.carousel-content .carousel-item img { box-shadow: 0 0 15px 0 #444; }
+
+.carousel-content .carousel-control-prev { left: -110px; border-bottom: 0; }
+.carousel-content .carousel-control-next { right: -110px; border-bottom: 0; }
+
+.carousel-content .carousel-caption { position: relative; left: auto; right: auto; bottom: auto; }
+.carousel-content .carousel-caption h3 { color: #fff; }
+.carousel-content .carousel-caption .carousel-caption-description { color: #fff; color: rgba(255, 255, 255, 0.8); }
+
+.carousel-content .carousel-indicators { bottom: -40px; }
+.carousel-content .carousel-indicators li { width: 16px; height: 16px; margin-left: 5px; margin-right: 5px; border-radius: 50%; }
+
+
+
+
+/*============= CONTACT SECTION =============*/
+
+.footer{
+   background-color: #17191c;
+}
+
+.foooter img{
+   height: 2rem;
+   width: 3rem;
+}
+
+.bottomlogo {
+   width: 18rem; 
+}
+
+.footer a{
+   color: white;
+   text-decoration: none;
+}
+
+ul.social{
+   list-style-type: none;
+   display: flex;
+   padding: 0;
+   margin: 0 auto;
+   max-width: 11.8rem;
+}
+
+ul.social li{
+   margin: 0 auto;
+   display: inline;
+   padding-right: 1.3rem;
+}
+
+.footer .svg-inline--fa {
+   font-size: 2rem;
+}
+
+.footer .svg-inline--fa:hover {
+   color: #A88852;
+}
+
+
+hr.socket {
+   border-top: .2rem solid white;
+}
+
+
+
+/*============= MODAL WINDWOW =============*/
+
+/* The Modal (background) */
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+ }
+
+ .modal a{
+   color: white;
+   text-decoration: none;
+}
+
+.modal h4{
+   color: #A88852;
+   font-weight: 900;
+}
+
+.modal .svg-inline--fa {
+   font-size: 1.8rem;
+}
+
+.modal .svg-inline--fa:hover {
+   color: #A88852;
+}
+
+ 
+ /* Modal Content (image) */
+ .modal-img {
+   margin: auto;
+   display: block;
+   padding-top: 1rem; /* Location of the box */
+   padding-bottom: 1rem; /* Location of the box */
+   width: 100%;
+   max-width: 700px;
+ }
+
+ .modal-text {
+   text-transform: uppercase;
+   font-weight: 500;
+   padding-bottom: 1rem;
+   text-align: justify;
+
+}
+ 
+ /* Caption of Modal Image */
+ #caption {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 50px;
+ }
+
+
+ /* Add Animation */
+ .modal-img, #caption {  
+   -webkit-animation-name: zoom;
+   -webkit-animation-duration: 0.3s;
+   animation-name: zoom;
+   animation-duration: 0.3s;
+ }
+ 
+ @-webkit-keyframes zoom {
+   from {-webkit-transform:scale(0.8)} 
+   to {-webkit-transform:scale(1)}
+ }
+ 
+ @keyframes zoom {
+   from {transform:scale(0.8)} 
+   to {transform:scale(1)}
+ }
+ 
+ /* The Close Button */
+ .close {
+   position: absolute;
+   top: 65px;
+   right: 10px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+
+
+ ul.social-proj{
+   list-style-type: none;
+   display: inline;
+   padding: 0;
+   margin: 0 auto;
+   max-width: 11.8rem;
+}
+
+ul.social-proj li{
+   margin: 0 auto;
+   display: inline;
+   padding: 1rem;
+}
+
+
+
+
+ 
+ /* 100% Image Width on Smaller Screens */
+ @media only screen and (max-width: 700px){
+   .modal-content {
+     width: 100%;
+   }
+ }
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Medium (md) devices (tablets, 768px and under) */
+@media (max-width: 767.98px) {
+   .caption{
+      top: 34%;
+   }
+
+   .caption h1{
+      font-size: 1.8rem;
+   }
+
+   .modal-img {
+      width: 70%;
+      max-width: 700px;
+    }
+
+    .carousel-content .carousel-control-prev, 
+    .carousel-content .carousel-control-next {
+        display: none;
+    }
+ 
+    .carousel-content .carousel-indicators li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Fixed Landing Page Section --*/
+.landing {
+   position: relative;
+   width: 100%;
+   display: table;
+   z-index: -1;
+}
+.home-wrap {
+   clip: rect(0, auto, auto, 0);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+.home-inner {
+   display: table;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center center;
+   transform: translateZ(0);
+   -webkit-transform: translateZ(0);
+   will-change: transform;
+}
