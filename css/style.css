@@ -387,6 +387,10 @@ ul.social-proj li{
    .modal-content {
      width: 100%;
    }
+
+   .caption img{
+      width: 10rem;
+   }
  }
 
 
@@ -417,6 +421,10 @@ ul.social-proj li{
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    .caption img{
+      width: 10rem;
+   }
 }
 
 /*============ BOOTSTRAP BREAK POINTS:
