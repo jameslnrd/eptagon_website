@@ -152,7 +152,7 @@ body {
 .bc-container{
    position: relative;
    overflow: hidden;
-   padding-top: 137%;
+   padding-top: 150%;
    display: flex;
 }
 
@@ -164,6 +164,7 @@ body {
       width: 100%;
       height: 100%;
       border: 0;
+      background-color: #17191c;
 }
 
 
@@ -212,6 +213,9 @@ body {
 
 
 /*============= FEATURED SECTION =============*/
+
+.featured {
+}
 
 
 .carousel-content { 
@@ -361,12 +365,11 @@ hr.socket {
 }
 
  
- /* Modal Content (image) */
  .modal-img {
    margin: auto;
    display: block;
-   padding-top: 1rem; /* Location of the box */
-   padding-bottom: 1rem; /* Location of the box */
+   padding-top: 1rem;
+   padding-bottom: 1rem; 
    width: 100%;
    max-width: 700px;
  }
@@ -379,7 +382,6 @@ hr.socket {
 
 }
  
- /* Caption of Modal Image */
  #caption {
    margin: auto;
    display: block;
@@ -428,7 +430,6 @@ hr.socket {
    cursor: pointer;
  }
 
-
  ul.social-proj{
    list-style-type: none;
    display: inline;
@@ -442,7 +443,6 @@ ul.social-proj li{
    display: inline;
    padding: 1rem;
 }
-
 
 
  
