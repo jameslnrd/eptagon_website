@@ -13,7 +13,51 @@ body {
    font-family: 'Lato', sans-serif;
    color: #505962;
    overflow-x: hidden;
+   background-color: #17191c;
+
 }
+
+
+/*================= GENERAL SECTIONS ==============*/
+
+.heading {
+   text-transform: uppercase;
+   font-weight: 400;
+   font-size: 1.8rem;
+   padding-bottom: 1rem;
+   color: #A88852;
+}
+
+/*-- Scrollspy Offset --*/
+.offset:before {
+   content: "";
+   height: 3rem;
+   display: block;
+   margin-top: -3rem;
+}
+
+.dark{
+   background-color: #17191c;
+}
+
+.dark p {
+   font-size: 1.1rem;
+   font-weight: 300;
+   line-height: 1.9rem;
+}
+
+
+.arrow .svg-inline--fa {
+   font-size: 1.5rem;
+   color: #A88852;
+   transition: transform 0.2s ease;
+}
+
+.arrow .svg-inline--fa:hover {
+   transform: scale(1.1);
+}
+
+
 
 /*============= NAVIGATION =============*/
 .navbar-brand img{
@@ -48,6 +92,8 @@ body {
 /*-- Fixed Landing Page Section --*/
 .landing{
    height: 100vh;
+   background-color: #17191c;
+
 }
 .home-inner{
    background-image: url('../img/artwork.jpg');
@@ -89,52 +135,35 @@ body {
 
 /*============= ABOUT SECTION =============*/
 
-/*-- Scrollspy Offset --*/
-.offset:before {
-   content: "";
-   height: 3rem;
-   display: block;
-   margin-top: -3rem;
-}
-
-.heading {
-   text-transform: uppercase;
-   font-weight: 700;
-   padding-bottom: 1rem;
-}
-
-.heading {
-   text-transform: uppercase;
-   font-weight: 700;
-   padding-bottom: 1rem;
-   color: #A88852;
-}
-
-.about .svg-inline--fa {
-   color: #00b3ff;
-}
 
 .intro {
    background-color: #17191c;
    font-size: 1.1rem;
-   font-weight: 500;
+   font-weight: 300;
    line-height: 1.9rem;
 }
 
-.intro .svg-inline--fa {
+.spacer .svg-inline--fa {
    font-size: 0.7rem;
    color: #A88852;
 }
 
-.bc-embed{
+
+.bc-container{
+   position: relative;
+   overflow: hidden;
+   padding-top: 137%;
    display: flex;
-   text-align: center;
-   align-items: center;
-   justify-content: center;
 }
 
+
 .bc-iframe{
-   display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
 }
 
 
@@ -142,20 +171,22 @@ body {
 
 .artist{
    background-color: #17191c;
-
 }
 
 
 .artist-item img:hover{
    transform: scale(1.05);
+   filter: brightness(100%);
    -webkit-filter: brightness(110%);
 
 }
 
 .artist-item img {
    transition: transform .4s ease;
+
 }
 
+/*
 .artist .svg-inline--fa {
    font-size: 1rem;
    color: #A88852;
@@ -177,7 +208,7 @@ body {
    color: #A88852;
    transition: transform 0.5s ease;
 }
-
+*/
 
 
 /*============= FEATURED SECTION =============*/
@@ -186,14 +217,16 @@ body {
 .carousel-content { 
    background-color: #17191c;
    width: 100%;
-   padding: 60px 0 80px 0; }
+   padding: 30px 0 30px 0; }
 
-.carousel-content h1 { padding-top: 60px; color: #fff; }
+
+.carousel-content h1 { padding-top: 30px; color: #fff; }
 .carousel-content .description { margin: 30px 0 0 0; padding-bottom: 30px; }
 .carousel-content .description p { color: #fff; color: rgba(255, 255, 255, 0.8); }
 .carousel-content .description a { color: #fff; color: rgba(255, 255, 255, 0.8); border-color: #fff; border-color: rgba(255, 255, 255, 0.8); }
 .carousel-content .description a:hover,
 .carousel-content .description a:focus { color: #fff; color: rgba(255, 255, 255, 0.8); }
+
 
 .carousel-content .carousel-item .embed-responsive,
 .carousel-content .carousel-item img { box-shadow: 0 0 15px 0 #444; }
@@ -201,12 +234,18 @@ body {
 .carousel-content .carousel-control-prev { left: -110px; border-bottom: 0; }
 .carousel-content .carousel-control-next { right: -110px; border-bottom: 0; }
 
+
 .carousel-content .carousel-caption { position: relative; left: auto; right: auto; bottom: auto; }
 .carousel-content .carousel-caption h3 { color: #fff; }
 .carousel-content .carousel-caption .carousel-caption-description { color: #fff; color: rgba(255, 255, 255, 0.8); }
 
-.carousel-content .carousel-indicators { bottom: -40px; }
-.carousel-content .carousel-indicators li { width: 16px; height: 16px; margin-left: 5px; margin-right: 5px; border-radius: 50%; }
+
+
+.carousel-content .carousel-indicators { bottom: -20px; }
+.carousel-content .carousel-indicators li {
+   background-color: #A88852;
+   width: 16px; height: 16px; margin-left: 10px; margin-right: 10px; border-radius: 50%; 
+}
 
 
 
@@ -233,7 +272,7 @@ body {
 
 ul.social{
    list-style-type: none;
-   display: flex;
+   display: inline;
    padding: 0;
    margin: 0 auto;
    max-width: 11.8rem;
@@ -242,11 +281,11 @@ ul.social{
 ul.social li{
    margin: 0 auto;
    display: inline;
-   padding-right: 1.3rem;
+   padding: 1.4rem;
 }
 
 .footer .svg-inline--fa {
-   font-size: 2rem;
+   font-size: 2.2rem;
 }
 
 .footer .svg-inline--fa:hover {
@@ -255,7 +294,34 @@ ul.social li{
 
 
 hr.socket {
-   border-top: .2rem solid white;
+   border-top: .2rem solid #A88852;
+}
+
+
+/*======== PARTNERS ==============*/
+
+.partners img{
+   width: 20%;
+   padding-bottom: 2rem;
+   transition: transform .3s ease;
+}
+
+.partners img:hover{
+   transform: scale(1.1);
+}
+
+.partners p{
+   line-height: 1.3rem;
+   font-weight: 300;
+   font-size: 1rem;
+}
+
+.partners a {
+   color: #A88852;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-weight: 900;
+   font-size: 1.1rem; 
 }
 
 
@@ -277,7 +343,7 @@ hr.socket {
  }
 
  .modal a{
-   color: white;
+   color: #FFFFFF;
    text-decoration: none;
 }
 
@@ -287,7 +353,7 @@ hr.socket {
 }
 
 .modal .svg-inline--fa {
-   font-size: 1.8rem;
+   font-size: 2.2rem;
 }
 
 .modal .svg-inline--fa:hover {
@@ -329,9 +395,9 @@ hr.socket {
  /* Add Animation */
  .modal-img, #caption {  
    -webkit-animation-name: zoom;
-   -webkit-animation-duration: 0.3s;
+   -webkit-animation-duration: 0.6s;
    animation-name: zoom;
-   animation-duration: 0.3s;
+   animation-duration: 0.6s;
  }
  
  @-webkit-keyframes zoom {
@@ -347,7 +413,7 @@ hr.socket {
  /* The Close Button */
  .close {
    position: absolute;
-   top: 65px;
+   top: 10px;
    right: 10px;
    color: #f1f1f1;
    font-size: 40px;
@@ -363,7 +429,6 @@ hr.socket {
  }
 
 
-
  ul.social-proj{
    list-style-type: none;
    display: inline;
@@ -377,7 +442,6 @@ ul.social-proj li{
    display: inline;
    padding: 1rem;
 }
-
 
 
 
@@ -407,6 +471,12 @@ ul.social-proj li{
       font-size: 1.8rem;
    }
 
+
+   .dark p{
+      font-size: 1rem;
+      line-height: normal;
+   }
+
    .modal-img {
       width: 70%;
       max-width: 700px;
@@ -423,7 +493,7 @@ ul.social-proj li{
     }
 
     .caption img{
-      width: 10rem;
+      width: 60%;
    }
 }
 
