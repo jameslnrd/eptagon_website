@@ -214,8 +214,6 @@ body {
 
 /*============= FEATURED SECTION =============*/
 
-.featured {
-}
 
 
 .carousel-content { 
@@ -326,6 +324,56 @@ hr.socket {
    text-decoration: none;
    font-weight: 900;
    font-size: 1.1rem; 
+}
+
+
+/*============= DATES SECTION ==================*/
+
+
+.row-striped:nth-of-type(odd){
+   background-color: #222529;
+   border-left: 2px #D9CAA5 solid;
+ }
+ 
+ .row-striped:nth-of-type(even){
+   background-color: #17191c;
+   border-left: 2px #A88852 solid;
+ }
+ 
+ .row-striped {
+     padding: 5px 0;
+ }
+
+.row-striped h2{
+   font-size: 2.5rem;
+}
+
+
+.row-striped h3{
+   font-size: 1.3rem;
+   color: lightgrey;
+   text-transform: uppercase;
+}
+
+ .row-striped .badge{
+     background-color: #A88852;
+ }
+
+ .row-striped a{
+   text-decoration: none;
+   color: #A88852!important;
+
+ }
+
+ .row-striped a:hover{
+   text-decoration: none;
+   color: #A88852!important;
+
+ }
+
+ .row-striped .svg-inline--fa {
+   font-size: 1rem;
+   color: #A88852;
 }
 
 

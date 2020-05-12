@@ -20,6 +20,11 @@
 	<!-- Google Fonts "%7C" replaces "|" for w3c validation -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
+
+	<!-- use tabletop to get data from a google drive spreadsheet-->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+
+
 	<script src="js/jquery-3.4.1.min.js"></script>
 
 </head>
@@ -57,11 +62,14 @@
 					<a href="#featured" class="nav-link">Featured</a>
 				</li>
 				<li class="nav-item">
-					<a href="#info" class="nav-link">Info</a>
+					<a href="#dates" class="nav-link">Dates</a>
 				</li>
 				<li class="nav-item">
-					<a href="#contact" class="nav-link">contact</a>
+					<a href="#info" class="nav-link">Info</a>
 				</li>
+				<!--li class="nav-item">
+					<a href="#contact" class="nav-link">contact</a>
+				</li-->
 			</ul>
 		</div>
 
@@ -307,7 +315,7 @@
 					</div>
 				</div>
 			</div>
-			<a href="#info" class="arrow"><i class="fas fa-chevron-down fa-3x pb-2"></i></a>
+			<a href="#dates" class="arrow"><i class="fas fa-chevron-down fa-3x pb-2"></i></a>
 
 		</div>
 	</div>
@@ -315,8 +323,38 @@
 </div>
 
 
+<div id = "dates" class="offset">
+	<div id="date-container" class="col-10 col-lg-5 container text-center pt-3 pb-3">
+		<h2 class="heading  text-center pt-4 mb-0">Dates</h2>
+
+            
+		<!--div class="pt-3 row row-striped">
+			<div class="col-2 text-right">
+				<h2 class="display-4"><span class="badge badge-secondary">23</span></h2>
+				<h3>OCT</h3>
+				<h3>2020</h3>
+			</div>
+			<div class="col-10 text-light  px-5">
+				<a href="https://facebook.com" target="_blank" ><h3 class="text-uppercase"><strong>Ice Cream Social</strong></h3></a>
+				<ul class="list-inline">
+					<li class="list-inline-item"><i class="far fa-calendar-alt" aria-hidden="true"></i> Monday</li>
+					<li class="list-inline-item"><i class="far fa-clock" aria-hidden="true"></i> 12:30 PM - 2:00 PM</li>
+					<li class="list-inline-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Cafe</li>
+				</ul>
+				<p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div-->
+	</div>
+	<div id="date-container" class="col-10 col-lg-5 container text-center">
+		<a href="#info" class="container-fluid arrow text-center"><i class="fas fa-chevron-down fa-3x"></i></a>
+	</div>
+
+
+</div>
+
 
 <!-- Start About Section -->
+
 <div id="info" class="offset">
 
 
@@ -507,6 +545,8 @@
 <!-- End Jumbotron -->
 
 <!-- Script Source Files -->
+
+<script src="js/dateContent.js"></script>
 
 <!-- script for lanching the modal windows-->
 <script src="js/modalContentHandler.js"></script>
