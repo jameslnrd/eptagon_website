@@ -18,6 +18,8 @@
 	<!-- Style.css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/isotope.css">
+    <link rel="stylesheet" href="css/projects.css">
+
 
 	<!-- Google Fonts "%7C" replaces "|" for w3c validation -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
@@ -73,20 +75,8 @@
 
 	<!-- End Navigation -->
 
-	<!-- Start Landing Page Image-->
-	<div class="landing">
-		<div class="home-wrap">
-			<div class="home-inner"></div>
-		</div>
-	</div>
-	<!-- End Landing Page Image -->
-
-	<!-- Start Landing Page Content -->
-	<div class="col-12 caption">
-		<h1 class="text-light text-uppercase pb-3 pb-md-4"><img src="img/logo_epta_white2.png" alt="Logo"></h1>
-
-		<a href="#about" class=""><i class="fas fa-chevron-down fa-3x"></i></a>
-	</div>
+    <div class="container-fluid text-center pb-5">
+    </div>
 
 
 	<!-- End Landing Page Content-->
@@ -101,26 +91,28 @@
 	<!-- Start Container-Fluid -->
 	<div class="container-fluid text-center">
 		<h2 class="heading  text-center pt-4 mb-0">
-			Artists
+			Gallery
 		</h2>
 
-		<p class="text-light">
-            Eptagon is currently composed of the following artists :
-            <input type="text" id="filter" placeholder="Filter Algorithms">
 
+            <div class="col-sm-12 col-md-10 col-lg-9 grid-container justify-content-center">
 
-            <div class="col-sm-12 col-md-8 col-lg-9 grid-container justify-content-center ml-auto">
-
-
-            <h1>Isotope - filtering</h1>
-            
 
             <div class="button-group filters-button-group">
-              <button class="button is-checked" data-filter="*">show all</button>
-              <button class="button" data-filter=".music">music</button>
+              <button class="button is-checked" data-filter="*">all</button>
+              <!--button class="button" data-filter=".music">music</button-->
               <button class="button" data-filter=".digital-arts">digital arts</button>
               <button class="button" data-filter=".events">events</button>
-              <button class="button" data-filter=".events">live</button>
+              <button class="button" data-filter=".releases">releases</button>
+              <button class="button" data-filter=".video">sessions</button>
+              <button class="button" data-filter=".live">live</button>
+
+              <button class="button" data-filter="year2016">2016</button>
+              <button class="button" data-filter="year2017">2017</button>
+              <button class="button" data-filter="year2018">2018</button>
+              <button class="button" data-filter="year2019">2019</button>
+              <button class="button" data-filter="year2020">2020</button>
+
               <!--button class="button" data-filter=".event, .alkaline-earth">events</button>
               <!button class="button" data-filter=":not(.transition)">not transition</button>
               <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
@@ -133,165 +125,166 @@
             <div class="grid">
 
 
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 element-item music digital-arts">
-                    <p class="title"> Barus</p>
-                    <img id="barus" class="w-100" src="img/artists/barus2.jpg">
-                    <p class="descr"> Barus 2016 music</p>
-                    <p class="year">2016</p>
+                <!-- DIGITAL ART PROJECTS -->
+
+                <div class="element-sizer"></div>
+                <div class="element-item element-item--width2 overflow-hidden digital-arts">
+                    <img id="barus" class="image" src="img/artists/ng.jpg">
+                    <div class="middle">
+                        <div class="text">Nicolas Gaillardon</div>
+                    </div>
+                    <div class="year bottom-right">2016</div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-6 col-lg-4 element-item music digital-arts">
-                    <img id="barus" class="w-100" src="img/artists/barus2.jpg">
+                <!-- MUSIC RELEASES-->
+
+                <!-- Barus -->
+                <div class="element-item overflow-hidden releases">
+                    <a href="https://barus.bandcamp.com/album/drowned" target="_blank">
+                        <img id="barus" class="image w-100" src="https://f4.bcbits.com/img/a3568292010_10.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">Barús - Drowned</div>
+                    </div>
+                    <div class="year bottom-right">2018</div>
                 </div>
 
-                <div class="col-6 col-md-6 col-lg-4 element-item overflow-hidden music digital-arts">
-                    <div class="card rounded-0 mx-lg-4">
-                    <img src="img/testimonials/1.jpg" alt="" class="card-img-top rounded-0">
+                <div class="element-item overflow-hidden releases">
+                    <a href="https://barus.bandcamp.com/album/bar-s-ep" target="_blank">
+                        <img id="barus" class="image w-100" src="https://f4.bcbits.com/img/a2891355877_10.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">Barús - S/T</div>
+                    </div>
+                    <div class="year bottom-right">2015</div>
                 </div>
-                <div class="card-body">
-                    <h4>Johnson</h4>
-                    <p class="lead border-top pt-3">
-                        Some more random text in here.
-                    </p>
+
+                <!-- Maieutiste -->
+                <div class="element-item overflow-hidden releases">
+                    <a href="https://maieutiste.bandcamp.com/album/veritas" target="_blank">
+                        <img id="barus" class="image w-100" src="https://f4.bcbits.com/img/a1518864968_10.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">Maïeutiste - Veritas</div>
+                    </div>
+                    <div class="year bottom-right">2019</div>
                 </div>
-                <p class="year">2016</p>
 
-            </div>
+                <div class="element-item overflow-hidden releases">
+                    <a href="https://maieutiste.bandcamp.com/album/ma-eutiste-remastered" target="_blank">
+                        <img id="barus" class="image w-100" src="https://f4.bcbits.com/img/a0950509379_10.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">Maïeutiste - S/T remastered</div>
+                    </div>
+                    <div class="year bottom-right">2018</div>
+                </div>
 
-            <div class="col-6 col-md-6 col-lg-4 element-item overflow-hidden music digital-arts">
-                <h3 class="name">Plutonium</h3>
-                <p class="symbol">Pu</p>
-                <p class="number">94</p>
-                <p class="weight">(244)</p>
-              </div>
+                <div class="element-item overflow-hidden releases">
+                    <a href="https://maieutiste.bandcamp.com/album/ma-eutiste" target="_blank">
+                        <img id="barus" class="image w-100" src="https://f4.bcbits.com/img/a1812778411_10.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">Maïeutiste - S/T</div>
+                    </div>
+                    <div class="year bottom-right">2015</div>
+                </div>
 
-              <div class="element-item actinoid metal inner-transition " data-category="actinoid">
-                <h3 class="name">Zob</h3>
-                <p class="symbol">Pu</p>
-                <p class="number">94</p>
-                <p class="weight">(244)</p>
-              </div>
+                <!-- Epta Compile -->
+                <div class="element-item overflow-hidden releases">
+                    <a href="https://collectifeptagon.bandcamp.com/releases" target="_blank">
+                        <img id="barus" class="image w-100" src="https://f4.bcbits.com/img/a1680442765_10.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">Compilation 2019</div>
+                    </div>
+                    <div class="year bottom-right">2019</div>
+                </div>
 
-              <div class="element-item actinoid metal inner-transition " data-category="actinoid">
-                <h3 class="name">Zib</h3>
-                <p class="symbol">Pu</p>
-                <p class="number">94</p>
-                <p class="weight">(244)</p>
-              </div>
 
-              <div class="element-item actinoid metal inner-transition " data-category="actinoid">
-                <h3 class="name">Plutonium</h3>
-                <p class="symbol">Pu</p>
-                <p class="number">94</p>
-                <p class="weight">(244)</p>
-              </div>
 
-              <div class="element-item actinoid metal inner-transition " data-category="actinoid">
-                <h3 class="name">Zob</h3>
-                <p class="symbol">Pu</p>
-                <p class="number">94</p>
-                <p class="weight">(244)</p>
-              </div>
+                <!-- EVENTS (CONCERTS ETC) -->
 
-              <div class="element-item actinoid metal inner-transition " data-category="actinoid">
-                <h3 class="name">Zib</h3>
-                <p class="symbol">Pu</p>
-                <p class="number">94</p>
-                <p class="weight">(244)</p>
-              </div>
-            </div>
+                <div class="element-item element-item--width2 overflow-hidden events">
+                    <a href="" target="_blank">
+                        <img id="barus" class="image w-100" src="img/gallery/lancement.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">Inauguration</div>
+                    </div>
+                    <div class="year bottom-right">2016</div>
+                </div>
+
+                <div class="element-item element-item--width2 overflow-hidden events">
+                    <img id="barus" class="image w-100" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/44300771_691636681208088_3793332128192659456_o.jpg?_nc_cat=108&_nc_sid=dd9801&_nc_oc=AQlSwU0FxVl8omhPRS60gaaVqI53mSC8GRYXrMyD3b1Rlew1OjGNCP069hrC6sYPcpk&_nc_ht=scontent-cdg2-1.xx&oh=bb1db5b53587aacf253a03de86a1e334&oe=5EE064E5">
+                    <div class="middle">
+                        <div class="text">Nicolas Gaillardon</div>
+                    </div>
+                    <div class="year bottom-right">2018</div>
+                </div>
+
+                <!-- LIVE -->
+
+
+                <div class="element-item element-item--width2 overflow-hidden live">
+                    <a href="https://youtu.be/9ZsN9bhJJV4" target="_blank">
+                        <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/9ZsN9bhJJV4/maxresdefault.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">Maïeutiste - Beltane</div>
+                    </div>
+                    <div class="year bottom-right">2016</div>
+                </div>
+
+                <div class="element-item element-item--width2 overflow-hidden live">
+                    <a href="https://youtu.be/A48bhHASPrs" target="_blank">
+                        <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/A48bhHASPrs/maxresdefault.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">Barus - Dissever Live</div>
+                    </div>
+                    <div class="year bottom-right">2018</div>
+                </div>
+
+
+                <!-- VIDEO -->
+
+                <div class="element-item element-item--width2 overflow-hidden video">
+                    <a href="https://youtu.be/-OAOV1fx5qs" target="_blank">
+                        <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/-OAOV1fx5qs/maxresdefault.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">Noise for Souls - EP1</div>
+                    </div>
+                    <div class="year bottom-right">2020</div>
+                </div>
+
+                <div class="element-item element-item--width2 overflow-hidden video">
+                    <a href="https://youtu.be/ZO1eqDWxarM" target="_blank">
+                        <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/ZO1eqDWxarM/maxresdefault.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">Freestyle - SID 1</div>
+                    </div>
+                    <div class="year bottom-right">2017</div>
+                </div>
+
+                <div class="element-item element-item--width2 overflow-hidden video">
+                    <a href="https://youtu.be/Db33ds_xjW8" target="_blank">
+                        <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/ZO1eqDWxarM/maxresdefault.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">Freestyle - SID 2</div>
+                    </div>
+                    <div class="year bottom-right">2017</div>
+                </div>
+
+                
+                </div>
+                
+        </div>
         </div>
             
-
-
-
-		</p>
-
-		<!-- Start of Portfolio Row-->
-		<div class="row pt-3 pb-4 justify-content-center">
-
-			<div class="col-6 col-sm-6 col-md-4 p-3 artist-item overflow-hidden">
-                <p hidden class="panel-title"> Barus 2016 music</p>
-				<img id="barus" class="artist-image w-100" src="img/artists/barus2.jpg">
-			</div>
-
-			<div class="col-6 col-sm-6 col-md-4 p-3 artist-item overflow-hidden">
-                <p hidden class="panel-title"> Mayo 2017 music event</p>
-				<img id="maieutiste" class="artist-image w-100" src="img/artists/maieutiste.jpg">
-			</div>
-
-			<div class="col-6 col-sm-6 col-md-4 p-3 artist-item overflow-hidden">
-				<img id="orcae" class="artist-image w-100" src="img/artists/orcae.jpg">
-			</div>
-
-			<div class="col-6 col-sm-6 col-md-4 p-3 artist-item overflow-hidden">
-				<img id="epitaphe" class="artist-image w-100" src="img/artists/epitaphe.jpg">
-			</div>
-
-			<div class="col-6 col-sm-6 col-md-4 p-3 artist-item overflow-hidden">
-				<img id="gaillardon" class="artist-image w-100" src="img/artists/ng.jpg">
-			</div>
-
-			<div class="col-6 col-sm-6 col-md-4 p-0 artist-item overflow-hidden">
-				<img id="liquidflesh" class="artist-image w-100" src="img/artists/liquidflesh.jpg">
-			</div>
-
-			<div class="col-6 col-sm-6 col-md-4 p-0 artist-item overflow-hidden">
-				<img id="james" class="artist-image w-100" src="img/artists/james.jpg">
-			</div>
-
-			<div class="col-6 col-sm-6 col-md-4 p-0 artist-item overflow-hidden">
-				<img id="demenseed" class="artist-image w-100" src="img/artists/demenseed.jpg">
-			</div>
-
-
-		</div>
-		<!-- End of Portfolio Row-->
-        <a href="#featured" class="arrow"><i class="fas fa-chevron-down fa-3x pb-2"></i></a>
-        
-
-
-        <div class="container">
-            
-            
-            <div class="row row-striped">
-                <div class="col-2 text-right">
-                    <h2 class="display-4"><span class="badge badge-secondary">23</span></h2>
-                    <h3>OCT</h3>
-                    <h3>2020</h3>
-                </div>
-                <div class="col-10 text-light">
-                    <a href="https://facebook.com" target="_blank" ><h3 class="text-uppercase"><strong>Ice Cream Social</strong></h3></a>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><i class="far fa-calendar-alt" aria-hidden="true"></i> Monday</li>
-                        <li class="list-inline-item"><i class="far fa-clock" aria-hidden="true"></i> 12:30 PM - 2:00 PM</li>
-                        <li class="list-inline-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Cafe</li>
-                    </ul>
-                    <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-
-
-            <div class="row row-striped">
-                <div class="col-2 text-right">
-                    <h2 class="display-4"><span class="badge badge-secondary">28</span></h2>
-                    <h3>NOV</h3>
-                    <h3>2020</h3>
-                </div>
-                <div class="col-10 text-light">
-                    <a href="https://facebook.com" target="_blank" ><h3 class="text-uppercase"><strong>Ice Cream Social</strong></h3></a>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><i class="far fa-calendar-alt" aria-hidden="true"></i> Monday</li>
-                        <li class="list-inline-item"><i class="far fa-clock" aria-hidden="true"></i> 12:30 PM - 2:00 PM</li>
-                        <li class="list-inline-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Cafe</li>
-                    </ul>
-                    <p>Lorem ipsum dolsit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-
-            
-        </div>
-
 	</div>
 
 	<!-- End Container-Fluid -->
@@ -384,22 +377,30 @@
 
 <!-- Script Source Files -->
 <script>
-    $(document).ready(function(){
+
+
+
+$(document).ready(function(){
     // external js: isotope.pkgd.js
 
     // init Isotope    
     var $grid = $('.grid').isotope({
-    itemSelector: '.element-item',
-    layoutMode: 'masonry',
+        itemSelector: '.element-item',
+        percentPosition: true,
+        masonry: {
+        columnWidth: '.element-sizer'
+        }
     });
 
     // filter functions
     var filterFns = {
-    // show if number is greater than 50
-    numberGreaterThan50: function() {
-        var number = $(this).find('.number').text();
-        return parseInt( number, 10 ) > 50;
-    },
+    // match year
+    year2016: function() {return parseInt($(this).find('.year').text()) === 2016;},
+    year2017: function() {return parseInt($(this).find('.year').text()) === 2017;},
+    year2018: function() {return parseInt($(this).find('.year').text()) === 2018;},
+    year2019: function() {return parseInt($(this).find('.year').text()) === 2019;},
+    year2020: function() {return parseInt($(this).find('.year').text()) === 2020;},
+
     // show if name ends with -ium
     ium: function() {
         var name = $(this).find('.name').text();
@@ -412,7 +413,10 @@
     // use filterFn if matches value
     filterValue = filterFns[ filterValue ] || filterValue;
     $grid.isotope({ filter: filterValue,
-        layoutMode: 'masonry'
+        percentPosition: true,
+        masonry: {
+    columnWidth: '.element-sizer'
+    }
                });
     });
     // change is-checked class on buttons
