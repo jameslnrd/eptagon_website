@@ -31,8 +31,10 @@
 </head>
 <body data-spy="scroll" data-target="#navbarResponsive">
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"></script>
+    <div id="loading" class="loading text-center">
+        <img id="loading-image" class="fas fa-spinner fa-spin fa-4x" style="color: black    ;" alt="Loading..." />
+        <h2>Loading Gallery...</h2>
+      </div>
 
 <!-- Start Home Section -->
 <div id="home">
@@ -61,15 +63,14 @@
 				</li>
 				<li class="nav-item">
 					<a href="index.html#featured" class="nav-link">Featured</a>
-				</li>
+                </li>
+                <li class="nav-item">
+					<a href="index.html#dates" class="nav-link">Dates</a>
 				<li class="nav-item">
 					<a href="index.html#info" class="nav-link">Info</a>
 				</li>
-				<li class="nav-item">
-					<a href="index.html#contact" class="nav-link">contact</a>
-                </li>
                 <li class="nav-item">
-					<a href="" class="nav-link">projects</a>
+					<a href="" class="nav-link active">Gallery</a>
 				</li>
 			</ul>
 		</div>
@@ -93,20 +94,20 @@
 
 	<!-- Start Container-Fluid -->
 	<div class="container-fluid text-center">
-		<h2 class="heading  text-center pt-4 mb-0">
+		<h2 class="heading  text-center pt-4 pb-3 mb-0">
 			Gallery
 		</h2>
 
 
-            <div class="col-sm-12 col-md-10 col-lg-9 grid-container justify-content-center">
+            <div class="col-sm-12 col-md-10 col-lg-9 grid-container justify-content-center pb-2">
 
 
             <div class="button-group filters-button-group">
-              <button id="allbtn" class="button is-checked" data-filter="*">all</button>
+              <button id="allbtn" class="button" data-filter="*">all</button>
               <!--button class="button" data-filter=".music">music</button-->
               <button class="button" data-filter=".digital-arts">digital arts</button>
               <button class="button" data-filter=".events">events</button>
-              <button id="relbtn" class="button" data-filter=".releases">releases</button>
+              <button id="relbtn" class="button  is-checked" data-filter=".releases">releases</button>
               <button class="button" data-filter=".video">sessions</button>
               <button class="button" data-filter=".live">live</button>
 
@@ -125,7 +126,7 @@
             </div>
 
             
-            <div class="grid">
+            <div class="grid pt-3">
 
 
                 <!-- DIGITAL ART PROJECTS -->
@@ -144,7 +145,7 @@
                 <!-- Barus -->
                 <div class="element-item overflow-hidden releases">
                     <a href="https://barus.bandcamp.com/album/drowned" target="_blank">
-                        <img id="barus" class="image w-100" src="https://f4.bcbits.com/img/a3568292010_10.jpg">
+                        <img id="barus" class="image w-100" src="img/gallery/drowned.jpg">
                     </a>
                     <div class="middle">
                         <div class="text">Barús - Drowned</div>
@@ -154,7 +155,7 @@
 
                 <div class="element-item overflow-hidden releases">
                     <a href="https://barus.bandcamp.com/album/bar-s-ep" target="_blank">
-                        <img id="barus" class="image w-100" src="https://f4.bcbits.com/img/a2891355877_10.jpg">
+                        <img id="barus" class="image w-100" src="img/gallery/barus-ep.jpg">
                     </a>
                     <div class="middle">
                         <div class="text">Barús - S/T</div>
@@ -165,7 +166,7 @@
                 <!-- Maieutiste -->
                 <div class="element-item overflow-hidden releases">
                     <a href="https://maieutiste.bandcamp.com/album/veritas" target="_blank">
-                        <img id="barus" class="image w-100" src="https://f4.bcbits.com/img/a1518864968_10.jpg">
+                        <img id="barus" class="image w-100" src="img/gallery/veritas.jpg">
                     </a>
                     <div class="middle">
                         <div class="text">Maïeutiste - Veritas</div>
@@ -175,7 +176,7 @@
 
                 <div class="element-item overflow-hidden releases">
                     <a href="https://maieutiste.bandcamp.com/album/ma-eutiste-remastered" target="_blank">
-                        <img id="barus" class="image w-100" src="https://f4.bcbits.com/img/a0950509379_10.jpg">
+                        <img id="barus" class="image w-100" src="img/gallery/ma-remaster.jpg">
                     </a>
                     <div class="middle">
                         <div class="text">Maïeutiste - S/T remastered</div>
@@ -185,7 +186,7 @@
 
                 <div class="element-item overflow-hidden releases">
                     <a href="https://maieutiste.bandcamp.com/album/ma-eutiste" target="_blank">
-                        <img id="barus" class="image w-100" src="https://f4.bcbits.com/img/a1812778411_10.jpg">
+                        <img id="barus" class="image w-100" src="img/gallery/ma-album1.jpg">
                     </a>
                     <div class="middle">
                         <div class="text">Maïeutiste - S/T</div>
@@ -196,12 +197,33 @@
                 <!-- Epta Compile -->
                 <div class="element-item overflow-hidden releases">
                     <a href="https://collectifeptagon.bandcamp.com/releases" target="_blank">
-                        <img id="barus" class="image w-100" src="https://f4.bcbits.com/img/a1680442765_10.jpg">
+                        <img id="barus" class="image w-100" src="img/gallery/compilation.jpg">
                     </a>
                     <div class="middle">
                         <div class="text">Compilation 2019</div>
                     </div>
                     <div class="year bottom-right">2019</div>
+                </div>
+
+                <!-- FIA -->
+                <div class="element-item overflow-hidden releases">
+                    <a href="https://faithinagony.bandcamp.com/album/faith-in-agony-e-p" target="_blank">
+                        <img id="barus" class="image w-100" src="img/gallery/fia-ep1.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">FIA - EP 1</div>
+                    </div>
+                    <div class="year bottom-right">2016</div>
+                </div>
+
+                <div class="element-item overflow-hidden releases">
+                    <a href="https://faithinagony.bandcamp.com/album/do-not-repeat" target="_blank">
+                        <img id="barus" class="image w-100" src="img/gallery/fia-ep2.jpg">
+                    </a>
+                    <div class="middle">
+                        <div class="text">FIA - EP 2</div>
+                    </div>
+                    <div class="year bottom-right">2017</div>
                 </div>
 
 
@@ -296,55 +318,11 @@
 <!-- End Portfolio Section -->
 
 
-
-<!-- End About Section -->
-
-<!-- Start Jumbotron-->
-<!--div class="jumbotron text-center pb-5 mb-0">
-    <h2 class="heading">Testimonials</h2>
-
-
-
-    <div class="row justify-content-center">
-        <div class ="col-11 col-md-10">
-            <div class="row pt-3">
-
-                <div class="col-md-6 pb-5">
-                    <div class="card rounded-0 mx-lg-4">
-                        <img src="img/testimonials/1.jpg" alt="" class="card-img-top rounded-0">
-                    </div>
-                    <div class="card-body">
-                        <h4>Johnson</h4>
-                        <p class="lead border-top pt-3">
-                            Some more random text in here.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 pb-5">
-                    <div class="card rounded-0 mx-lg-4">
-                        <img src="img/testimonials/2.jpg" alt="" class="card-img-top rounded-0">
-                    </div>
-                    <div class="card-body">
-                        <h4>Tits MgGee</h4>
-                        <p class="lead border-top pt-3">
-                            Some more random text in here.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div-->
-<!-- End Jumbotron -->
-
-<!-- End Testimonials Section -->
-
 <!-- Start Contact Section -->
 <div id="contact" class="offset">
 
 	<div class="container-fluid footer">
-		<div class="row pt-4 pb-5 justify-content-center">				                            
+		<div class="row pt-5 pb-5 justify-content-center">				                            
 
 			<div class="col-sm-11 col-md-9 col-lg-6 text-light text-center">
 				<img src="img/logo_epta2.png" alt="" class="bottomlogo">
@@ -379,18 +357,22 @@
 
 
 <!-- Script Source Files -->
+
+<script>
+    $(window).on('load', function() {
+      $('#loading').fadeOut();
+        var PageLoadFilter = '.releases';
+        $('.grid').isotope({ filter: PageLoadFilter});
+    });
+  </script>
+
+
+
+
 <script>
 
-
-
 $(document).ready(function(){
-    // external js: isotope.pkgd.js
-
-    setTimeout ($("#allbtn").click(), 300 );
-
-
-    //$("#relbtn").trigger('click');
-
+    
     // init Isotope    
     var $grid = $('.grid').isotope({
         itemSelector: '.element-item',
@@ -415,6 +397,8 @@ $(document).ready(function(){
         return name.match( /ium$/ );
     }
     };
+
+
     // bind filter button click
     $('.filters-button-group').on( 'click', 'button', function() {
     var filterValue = $( this ).attr('data-filter');
@@ -427,6 +411,7 @@ $(document).ready(function(){
     }
                });
     });
+
     // change is-checked class on buttons
     $('.button-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
@@ -435,18 +420,6 @@ $(document).ready(function(){
         $( this ).addClass('is-checked');
     });
     });
-
-    /*
-        $('.grid').isotope({
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            masonry: {
-                columnWidth: '.grid-sizer'
-            }
-            });
-    */
-
-
 
         var $panels = $('.artist-item');
 
