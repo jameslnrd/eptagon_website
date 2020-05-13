@@ -126,7 +126,7 @@
             </div>
 
             
-            <div class="grid pt-3">
+            <div id="thegrid" class="grid pt-3">
 
 
                 <!-- DIGITAL ART PROJECTS -->
@@ -423,6 +423,8 @@
       $('#loading').fadeOut();
         var PageLoadFilter = '.releases';
         $('.grid').isotope({ filter: PageLoadFilter});
+        $('#thegrid').css('visibility','visible');
+
     });
   </script>
 
@@ -434,7 +436,6 @@
 $(document).ready(function(){
 
     //$('.grid').isotope({ sortBy : 'random' });
-
     
     // init Isotope    
     var $grid = $('.grid').isotope({

@@ -60,6 +60,9 @@
     display: block;
   }
 
+  .grid{
+    visibility:hidden;
+  }
 
   /* clear fix */
   .grid:after {
