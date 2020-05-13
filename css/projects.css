@@ -14,9 +14,8 @@
   
   #loading-image {
     position: absolute;
+    top: 40%;
     margin: 0 auto;
-    top: 50%;
-    left: 50%;
     z-index: 100;
     
   }
@@ -24,6 +23,6 @@
   .loading h2{
       text-transform: uppercase;
       position: relative;
-      top: 40%;
+      top: 30%;
       z-index: 100;
   }
