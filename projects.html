@@ -432,11 +432,15 @@
 <script>
 
 $(document).ready(function(){
+
+    //$('.grid').isotope({ sortBy : 'random' });
+
     
     // init Isotope    
     var $grid = $('.grid').isotope({
         itemSelector: '.element-item',
         percentPosition: true,
+        sortBy: 'random',
         masonry: {
         columnWidth: '.element-sizer',
         }
@@ -466,9 +470,11 @@ $(document).ready(function(){
     filterValue = filterFns[ filterValue ] || filterValue;
     $grid.isotope({ filter: filterValue,
         percentPosition: true,
+        sortBy :'random',
+        stagger : 10,
         masonry: {
-    columnWidth: '.element-sizer',
-    }
+        columnWidth: '.element-sizer',
+        }
                });
     });
 
