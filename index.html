@@ -26,8 +26,8 @@
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 
-	<!-- touch swipe plugin-->
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+
 
 </head>
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -292,10 +292,10 @@
 							</div>
 
 
-							<a class="arrow carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+							<a class="prev arrow carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
 								<span class="fas fa-chevron-left fa-2x" aria-hidden="true"></span>
 							</a>
-							<a class="arrow carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+							<a class="next arrow carousel-control-next" href="#carousel-example" role="button" data-slide="next">
 								<span class="fas fa-chevron-right fa-2x" aria-hidden="true"></span>
 							</a>
 						</div>
@@ -552,14 +552,28 @@
 
 <script>
 
-$(".carousel").swipe({
+$( ".carousel .carousel-inner" ).swipe( {
+    swipeLeft: function ( event, direction, distance, duration, fingerCount ) {
+		this.parent( ).carousel( 'next' );
+		console.log("swiping");
 
-	swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-		if (direction == 'left') $(this).carousel('next');
-		if (direction == 'right') $(this).carousel('prev');
-	},
-	allowPageScroll:"vertical"
-	});
+    },
+    swipeRight: function ( ) {
+		this.parent( ).carousel( 'prev' );
+		console.log("swiping");
+
+    },
+    threshold: 0,
+    tap: function(event, target) {
+        window.location = $(this).find('.carousel-item.active a').attr('href');
+    },
+    excludedElements:"label, button, input, select, textarea, .noSwipe"
+    } );
+
+    $('.carousel .carousel-inner').on('dragstart', 'a', function () {
+        return false;
+	});  
+	
 
 </script>
 
@@ -570,10 +584,13 @@ $(".carousel").swipe({
 <!-- script for lanching the modal windows-->
 <script src="js/modalContentHandler.js"></script>
 
+
 <!-- jQuery -->
 <script src="js/jquery-3.4.1.min.js"></script>
+
 <!-- Bootstrap JS -->
 <script src="js/bootstrap.min.js"></script>
+
 <!-- Font Awesome -->
 <script src="js/all.min.js"></script>
 
