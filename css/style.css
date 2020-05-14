@@ -150,19 +150,16 @@ body {
 
 
 .bc-container{
-   position: relative;
-   overflow: hidden;
-   padding-top: 150%;
+   padding-top: 0%;
    display: flex;
 }
 
 
 .bc-iframe{
-      position: absolute;
+      width: 100%;
+      height: 350px;;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
       border: 0;
       background-color: #17191c;
 }
@@ -341,7 +338,7 @@ hr.socket {
  }
  
  .row-striped {
-     padding: 5px 0;
+     padding: 0px 0;
  }
 
 .row-striped h2{
@@ -349,10 +346,19 @@ hr.socket {
 }
 
 
+.row-striped p{
+   font-weight: 300;
+}
+
+.row-striped .ul{
+   font-weight: 300;
+}
+
 .row-striped h3{
    font-size: 1.3rem;
    color: lightgrey;
    text-transform: uppercase;
+   line-height: 1rem;
 }
 
  .row-striped .badge{

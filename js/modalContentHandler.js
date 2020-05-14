@@ -223,6 +223,10 @@ modalImg.onclick = function() {
 	modalfadeOut();
 }
 
+document.getElementById("project-descr").onclick = function() {
+	modalfadeOut();
+}
+
 function modalfadeOut(){
 	$("#myModal").fadeOut();
 	document.getElementById("carousel").style.display = "block";

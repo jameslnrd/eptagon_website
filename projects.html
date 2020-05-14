@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="css/isotope.css">
     <link rel="stylesheet" href="css/projects.css">
 
-
 	<!-- Google Fonts "%7C" replaces "|" for w3c validation -->
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
@@ -40,7 +39,6 @@
 <div id="home">
 
 	<!-- Navigation -->
-
 	<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
 		<a href="index.html" class="navbar-brand">
 			<img src="img/logo_epta.png" alt="Logo">
@@ -70,13 +68,11 @@
 					<a href="index.html#info" class="nav-link">Info</a>
 				</li>
                 <li class="nav-item">
-					<a href="" class="nav-link active">Gallery</a>
+					<a href="#gallery" class="nav-link active">Gallery</a>
 				</li>
 			</ul>
 		</div>
-
 	</nav>
-
 	<!-- End Navigation -->
 
     <div class="container-fluid text-center pb-5">
@@ -88,7 +84,7 @@
 
 
 <!-- Start Artist Section -->
-<div id="artists" class="offset">
+<div id="gallery" class="offset">
 
 	<!-- Start Container-Fluid -->
 	<div class="container-fluid text-center">
@@ -96,297 +92,274 @@
 			Gallery
 		</h2>
 
-
             <div class="col-sm-12 col-md-10 col-lg-9 grid-container justify-content-center pb-2">
 
+                <div class="button-group filters-button-group">
+                <button id="allbtn" class="button" data-filter="*">all</button>
+                <button class="button" data-filter=".digital-arts">digital arts</button>
+                <button class="button" data-filter=".events">events</button>
+                <button id="relbtn" class="button  is-checked" data-filter=".releases">releases</button>
+                <button class="button" data-filter=".video">sessions</button>
+                <button class="button" data-filter=".live">live</button>
+                <button class="button" data-filter="year2016">2016</button>
+                <button class="button" data-filter="year2017">2017</button>
+                <button class="button" data-filter="year2018">2018</button>
+                <button class="button" data-filter="year2019">2019</button>
+                <button class="button" data-filter="year2020">2020</button>
+                </div>
+            
+                <div id="thegrid" class="grid pt-3">
 
-            <div class="button-group filters-button-group">
-              <button id="allbtn" class="button" data-filter="*">all</button>
-              <!--button class="button" data-filter=".music">music</button-->
-              <button class="button" data-filter=".digital-arts">digital arts</button>
-              <button class="button" data-filter=".events">events</button>
-              <button id="relbtn" class="button  is-checked" data-filter=".releases">releases</button>
-              <button class="button" data-filter=".video">sessions</button>
-              <button class="button" data-filter=".live">live</button>
 
-              <button class="button" data-filter="year2016">2016</button>
-              <button class="button" data-filter="year2017">2017</button>
-              <button class="button" data-filter="year2018">2018</button>
-              <button class="button" data-filter="year2019">2019</button>
-              <button class="button" data-filter="year2020">2020</button>
+                    <!-- DIGITAL ART PROJECTS -->
 
-              <!--button class="button" data-filter=".event, .alkaline-earth">events</button>
-              <!button class="button" data-filter=":not(.transition)">not transition</button>
-              <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
-              <button class="button" data-filter="numberGreaterThan50">number > 50</button>
-              <button class="button" data-filter="yearEqual2016">2016</button>
-              <button class="button" data-filter="ium">name ends with &ndash;ium</button-->
+                    <div class="element-sizer"></div>
+                    <div class="element-item element-item--width2 overflow-hidden digital-arts">
+                        <img id="barus" class="image" src="img/artists/ng.jpg">
+                        <div class="middle">
+                            <div class="text">Nicolas Gaillardon</div>
+                        </div>
+                        <div class="year bottom-right">2016</div>
+                    </div>
+
+                    <!-- MUSIC RELEASES-->
+
+                    <!-- Barus -->
+                    <div class="element-item overflow-hidden releases">
+                        <a href="https://barus.bandcamp.com/album/drowned" target="_blank">
+                            <img id="barus" class="image w-100" src="img/gallery/drowned.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Barús - Drowned</div>
+                        </div>
+                        <div class="year bottom-right">2018</div>
+                        <i class="icon fab fa-bandcamp"></i>
+
+                    </div>
+
+                    <div class="element-item overflow-hidden releases">
+                        <a href="https://barus.bandcamp.com/album/bar-s-ep" target="_blank">
+                            <img id="barus" class="image w-100" src="img/gallery/barus-ep.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Barús - S/T</div>
+                        </div>
+                        <div class="year bottom-right">2015</div>
+                        <i class="icon fab fa-bandcamp"></i>
+
+                    </div>
+
+                    <!-- Maieutiste -->
+                    <div class="element-item overflow-hidden releases">
+                        <a href="https://maieutiste.bandcamp.com/album/veritas" target="_blank">
+                            <img id="barus" class="image w-100" src="img/gallery/veritas.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Maïeutiste - Veritas</div>
+                        </div>
+                        <div class="year bottom-right">2019</div>
+                        <i class="icon fab fa-bandcamp"></i>
+
+                    </div>
+
+                    <div class="element-item overflow-hidden releases">
+                        <a href="https://maieutiste.bandcamp.com/album/ma-eutiste-remastered" target="_blank">
+                            <img id="barus" class="image w-100" src="img/gallery/ma-remaster.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Maïeutiste - S/T remastered</div>
+                        </div>
+                        <div class="year bottom-right">2018</div>
+                        <i class="icon fab fa-bandcamp"></i>
+
+                    </div>
+
+                    <div class="element-item overflow-hidden releases">
+                        <a href="https://maieutiste.bandcamp.com/album/ma-eutiste" target="_blank">
+                            <img id="barus" class="image w-100" src="img/gallery/ma-album1.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Maïeutiste - S/T</div>
+                        </div>
+                        <div class="year bottom-right">2015</div>
+                        <i class="icon fab fa-bandcamp"></i>
+
+                    </div>
+
+                    <!-- Epta Compile -->
+                    <div class="element-item overflow-hidden releases">
+                        <a href="https://collectifeptagon.bandcamp.com/releases" target="_blank">
+                            <img id="barus" class="image w-100" src="img/gallery/compilation.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Compilation 2019</div>
+                        </div>
+                        <div class="year bottom-right">2019</div>
+                        <i class="icon fab fa-bandcamp"></i>
+
+                    </div>
+
+                    <!-- FIA -->
+                    <div class="element-item overflow-hidden releases">
+                        <a href="https://faithinagony.bandcamp.com/album/faith-in-agony-e-p" target="_blank">
+                            <img id="barus" class="image w-100" src="img/gallery/fia-ep1.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">FIA - EP 1</div>
+                        </div>
+                        <div class="year bottom-right">2016</div>
+                        <i class="icon fab fa-bandcamp"></i>
+
+                    </div>
+
+                    <div class="element-item overflow-hidden releases">
+                        <a href="https://faithinagony.bandcamp.com/album/do-not-repeat" target="_blank">
+                            <img id="barus" class="image w-100" src="img/gallery/fia-ep2.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">FIA - EP 2</div>
+                        </div>
+                        <div class="year bottom-right">2017</div>
+                        <i class="icon fab fa-bandcamp"></i>
+
+                    </div>
+
+                    <!-- Orcae -->
+                    <div class="element-item overflow-hidden releases">
+                        <a href="https://orcae.bandcamp.com/album/d-o-s" target="_blank">
+                            <img id="barus" class="image w-100" src="img/gallery/orcae-2.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Orcae - 1</div>
+                        </div>
+                        <div class="year bottom-right">2017</div>
+                        <i class="icon fab fa-bandcamp"></i>
+                    </div>
+
+                    <div class="element-item overflow-hidden releases">
+                        <a href="https://orcae.bandcamp.com/album/impro-sessions-spring-2017" target="_blank">
+                            <img id="barus" class="image w-100" src="img/gallery/orcae-1.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Orcae - 2</div>
+                        </div>
+                        <div class="year bottom-right">2017</div>
+                        <i class="icon fab fa-bandcamp"></i>
+                    </div>
+
+                    <!-- Epitaphe -->
+                    <div class="element-item overflow-hidden releases">
+                        <a href="https://epitaphe.bandcamp.com/album/i-2" target="_blank">
+                            <img id="barus" class="image w-100" src="img/gallery/epitaphe-1.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Epitaphe - I</div>
+                        </div>
+                        <div class="year bottom-right">2019</div>
+                        <i class="icon fab fa-bandcamp"></i>
+                    </div>
+
+
+
+                    <!-- EVENTS (CONCERTS ETC) -->
+
+                    <div class="element-item element-item--width2 overflow-hidden events">
+                        <a href="" target="_blank">
+                            <img id="barus" class="image w-100" src="img/gallery/lancement.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Inauguration</div>
+                        </div>
+                        <div class="year bottom-right">2016</div>
+                    </div>
+
+                    <div class="element-item element-item--width2 overflow-hidden events">
+                        <img id="barus" class="image w-100" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/44300771_691636681208088_3793332128192659456_o.jpg?_nc_cat=108&_nc_sid=dd9801&_nc_oc=AQlSwU0FxVl8omhPRS60gaaVqI53mSC8GRYXrMyD3b1Rlew1OjGNCP069hrC6sYPcpk&_nc_ht=scontent-cdg2-1.xx&oh=bb1db5b53587aacf253a03de86a1e334&oe=5EE064E5">
+                        <div class="middle">
+                            <div class="text">Nicolas Gaillardon</div>
+                        </div>
+                        <div class="year bottom-right">2018</div>
+                    </div>
+
+                    <!-- LIVE -->
+
+
+                    <div class="element-item element-item--width2 overflow-hidden live">
+                        <a href="https://youtu.be/9ZsN9bhJJV4" target="_blank">
+                            <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/9ZsN9bhJJV4/maxresdefault.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Maïeutiste - Beltane</div>
+                        </div>
+                        <div class="year bottom-right">2016</div>
+                        <i class="icon fab fa-youtube"></i>
+                    </div>
+
+                    <div class="element-item element-item--width2 overflow-hidden live">
+                        <a href="https://youtu.be/A48bhHASPrs" target="_blank">
+                            <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/A48bhHASPrs/maxresdefault.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Barus - Dissever Live</div>
+                        </div>
+                        <div class="year bottom-right">2018</div>
+                        <i class="icon fab fa-youtube"></i>
+
+                    </div>
+
+
+                    <!-- VIDEO -->
+
+                    <div class="element-item element-item--width2 overflow-hidden video">
+                        <a href="https://youtu.be/-OAOV1fx5qs" target="_blank">
+                            <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/-OAOV1fx5qs/maxresdefault.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Noise for Souls - EP1</div>
+                        </div>
+                        <div class="year bottom-right">2020</div>
+                        <i class="icon fab fa-youtube"></i>
+
+                    </div>
+
+                    <div class="element-item element-item--width2 overflow-hidden video">
+                        <a href="https://youtu.be/ZO1eqDWxarM" target="_blank">
+                            <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/ZO1eqDWxarM/maxresdefault.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Freestyle - SID 1</div>
+                        </div>
+                        <div class="year bottom-right">2017</div>
+                        <i class="icon fab fa-youtube"></i>
+
+                    </div>
+
+                    <div class="element-item element-item--width2 overflow-hidden video">
+                        <a href="https://youtu.be/Db33ds_xjW8" target="_blank">
+                            <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/ZO1eqDWxarM/maxresdefault.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Freestyle - SID 2</div>
+                        </div>
+                        <div class="year bottom-right">2017</div>
+                        <i class="icon fab fa-youtube"></i>
+                    </div>
+                </div>   
             </div>
-
-            
-            <div id="thegrid" class="grid pt-3">
-
-
-                <!-- DIGITAL ART PROJECTS -->
-
-                <div class="element-sizer"></div>
-                <div class="element-item element-item--width2 overflow-hidden digital-arts">
-                    <img id="barus" class="image" src="img/artists/ng.jpg">
-                    <div class="middle">
-                        <div class="text">Nicolas Gaillardon</div>
-                    </div>
-                    <div class="year bottom-right">2016</div>
-                </div>
-
-                <!-- MUSIC RELEASES-->
-
-                <!-- Barus -->
-                <div class="element-item overflow-hidden releases">
-                    <a href="https://barus.bandcamp.com/album/drowned" target="_blank">
-                        <img id="barus" class="image w-100" src="img/gallery/drowned.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Barús - Drowned</div>
-                    </div>
-                    <div class="year bottom-right">2018</div>
-                    <i class="icon fab fa-bandcamp"></i>
-
-                </div>
-
-                <div class="element-item overflow-hidden releases">
-                    <a href="https://barus.bandcamp.com/album/bar-s-ep" target="_blank">
-                        <img id="barus" class="image w-100" src="img/gallery/barus-ep.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Barús - S/T</div>
-                    </div>
-                    <div class="year bottom-right">2015</div>
-                    <i class="icon fab fa-bandcamp"></i>
-
-                </div>
-
-                <!-- Maieutiste -->
-                <div class="element-item overflow-hidden releases">
-                    <a href="https://maieutiste.bandcamp.com/album/veritas" target="_blank">
-                        <img id="barus" class="image w-100" src="img/gallery/veritas.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Maïeutiste - Veritas</div>
-                    </div>
-                    <div class="year bottom-right">2019</div>
-                    <i class="icon fab fa-bandcamp"></i>
-
-                </div>
-
-                <div class="element-item overflow-hidden releases">
-                    <a href="https://maieutiste.bandcamp.com/album/ma-eutiste-remastered" target="_blank">
-                        <img id="barus" class="image w-100" src="img/gallery/ma-remaster.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Maïeutiste - S/T remastered</div>
-                    </div>
-                    <div class="year bottom-right">2018</div>
-                    <i class="icon fab fa-bandcamp"></i>
-
-                </div>
-
-                <div class="element-item overflow-hidden releases">
-                    <a href="https://maieutiste.bandcamp.com/album/ma-eutiste" target="_blank">
-                        <img id="barus" class="image w-100" src="img/gallery/ma-album1.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Maïeutiste - S/T</div>
-                    </div>
-                    <div class="year bottom-right">2015</div>
-                    <i class="icon fab fa-bandcamp"></i>
-
-                </div>
-
-                <!-- Epta Compile -->
-                <div class="element-item overflow-hidden releases">
-                    <a href="https://collectifeptagon.bandcamp.com/releases" target="_blank">
-                        <img id="barus" class="image w-100" src="img/gallery/compilation.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Compilation 2019</div>
-                    </div>
-                    <div class="year bottom-right">2019</div>
-                    <i class="icon fab fa-bandcamp"></i>
-
-                </div>
-
-                <!-- FIA -->
-                <div class="element-item overflow-hidden releases">
-                    <a href="https://faithinagony.bandcamp.com/album/faith-in-agony-e-p" target="_blank">
-                        <img id="barus" class="image w-100" src="img/gallery/fia-ep1.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">FIA - EP 1</div>
-                    </div>
-                    <div class="year bottom-right">2016</div>
-                    <i class="icon fab fa-bandcamp"></i>
-
-                </div>
-
-                <div class="element-item overflow-hidden releases">
-                    <a href="https://faithinagony.bandcamp.com/album/do-not-repeat" target="_blank">
-                        <img id="barus" class="image w-100" src="img/gallery/fia-ep2.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">FIA - EP 2</div>
-                    </div>
-                    <div class="year bottom-right">2017</div>
-                    <i class="icon fab fa-bandcamp"></i>
-
-                </div>
-
-                <!-- Orcae -->
-                <div class="element-item overflow-hidden releases">
-                    <a href="https://orcae.bandcamp.com/album/d-o-s" target="_blank">
-                        <img id="barus" class="image w-100" src="img/gallery/orcae-2.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Orcae - 1</div>
-                    </div>
-                    <div class="year bottom-right">2017</div>
-                    <i class="icon fab fa-bandcamp"></i>
-                </div>
-
-                <div class="element-item overflow-hidden releases">
-                    <a href="https://orcae.bandcamp.com/album/impro-sessions-spring-2017" target="_blank">
-                        <img id="barus" class="image w-100" src="img/gallery/orcae-1.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Orcae - 2</div>
-                    </div>
-                    <div class="year bottom-right">2017</div>
-                    <i class="icon fab fa-bandcamp"></i>
-                </div>
-
-                <!-- Epitaphe -->
-                <div class="element-item overflow-hidden releases">
-                    <a href="https://epitaphe.bandcamp.com/album/i-2" target="_blank">
-                        <img id="barus" class="image w-100" src="img/gallery/epitaphe-1.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Epitaphe - I</div>
-                    </div>
-                    <div class="year bottom-right">2019</div>
-                    <i class="icon fab fa-bandcamp"></i>
-                </div>
-
-
-
-                <!-- EVENTS (CONCERTS ETC) -->
-
-                <div class="element-item element-item--width2 overflow-hidden events">
-                    <a href="" target="_blank">
-                        <img id="barus" class="image w-100" src="img/gallery/lancement.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Inauguration</div>
-                    </div>
-                    <div class="year bottom-right">2016</div>
-                </div>
-
-                <div class="element-item element-item--width2 overflow-hidden events">
-                    <img id="barus" class="image w-100" src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/44300771_691636681208088_3793332128192659456_o.jpg?_nc_cat=108&_nc_sid=dd9801&_nc_oc=AQlSwU0FxVl8omhPRS60gaaVqI53mSC8GRYXrMyD3b1Rlew1OjGNCP069hrC6sYPcpk&_nc_ht=scontent-cdg2-1.xx&oh=bb1db5b53587aacf253a03de86a1e334&oe=5EE064E5">
-                    <div class="middle">
-                        <div class="text">Nicolas Gaillardon</div>
-                    </div>
-                    <div class="year bottom-right">2018</div>
-                </div>
-
-                <!-- LIVE -->
-
-
-                <div class="element-item element-item--width2 overflow-hidden live">
-                    <a href="https://youtu.be/9ZsN9bhJJV4" target="_blank">
-                        <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/9ZsN9bhJJV4/maxresdefault.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Maïeutiste - Beltane</div>
-                    </div>
-                    <div class="year bottom-right">2016</div>
-                    <i class="icon fab fa-youtube"></i>
-                </div>
-
-                <div class="element-item element-item--width2 overflow-hidden live">
-                    <a href="https://youtu.be/A48bhHASPrs" target="_blank">
-                        <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/A48bhHASPrs/maxresdefault.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Barus - Dissever Live</div>
-                    </div>
-                    <div class="year bottom-right">2018</div>
-                    <i class="icon fab fa-youtube"></i>
-
-                </div>
-
-
-                <!-- VIDEO -->
-
-                <div class="element-item element-item--width2 overflow-hidden video">
-                    <a href="https://youtu.be/-OAOV1fx5qs" target="_blank">
-                        <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/-OAOV1fx5qs/maxresdefault.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Noise for Souls - EP1</div>
-                    </div>
-                    <div class="year bottom-right">2020</div>
-                    <i class="icon fab fa-youtube"></i>
-
-                </div>
-
-                <div class="element-item element-item--width2 overflow-hidden video">
-                    <a href="https://youtu.be/ZO1eqDWxarM" target="_blank">
-                        <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/ZO1eqDWxarM/maxresdefault.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Freestyle - SID 1</div>
-                    </div>
-                    <div class="year bottom-right">2017</div>
-                    <i class="icon fab fa-youtube"></i>
-
-                </div>
-
-                <div class="element-item element-item--width2 overflow-hidden video">
-                    <a href="https://youtu.be/Db33ds_xjW8" target="_blank">
-                        <img id="barus" class="image w-100" src="https://i.ytimg.com/vi/ZO1eqDWxarM/maxresdefault.jpg">
-                    </a>
-                    <div class="middle">
-                        <div class="text">Freestyle - SID 2</div>
-                    </div>
-                    <div class="year bottom-right">2017</div>
-                    <i class="icon fab fa-youtube"></i>
-
-                </div>
-
-                
-                </div>
-                
         </div>
-        </div>
-            
 	</div>
-
 	<!-- End Container-Fluid -->
-
 </div>
-<!-- End Portfolio Section -->
+<!-- End Gallery Section -->
 
 
 <!-- Start Contact Section -->
 <div id="contact" class="offset">
-
 	<div class="container-fluid footer">
 		<div class="row pt-5 pb-5 justify-content-center">				                            
-
 			<div class="col-sm-11 col-md-9 col-lg-6 text-light text-center">
-				<img src="img/logo_epta2.png" alt="" class="bottomlogo">
-
-				<p></p>
-
+                <img src="img/logo_epta2.png" alt="" class="bottomlogo">
+                <p></p>
 				<ul class="social pt-3 pb-1">
 					<li><a href="https://github.com/jameslnrd" target="_blank">
 						<i class="fab fa-facebook-square"></i></a></li>
@@ -408,89 +381,79 @@
 
 		</div>
 	</div>
-
-
 </div>
 <!-- End Contact Section -->
+
+
 
 
 <!-- Script Source Files -->
 
 <script>
+    // Actions on complete load of the page (images ready)
     $(window).on('load', function() {
       $('#loading').fadeOut();
         var PageLoadFilter = '.releases';
         $('.grid').isotope({ filter: PageLoadFilter});
         $('#thegrid').css('visibility','visible');
-
     });
-  </script>
-
+</script>
 
 
 
 <script>
+    $(document).ready(function(){
+        
+        // init Isotope    
+        var $grid = $('.grid').isotope({
+            itemSelector: '.element-item',
+            percentPosition: true,
+            sortBy: 'random',
+            masonry: {columnWidth: '.element-sizer'}
+        });
 
-$(document).ready(function(){
+        // filter functions
+        var filterFns = {
+            // match year
+            year2016: function() {return parseInt($(this).find('.year').text()) === 2016;},
+            year2017: function() {return parseInt($(this).find('.year').text()) === 2017;},
+            year2018: function() {return parseInt($(this).find('.year').text()) === 2018;},
+            year2019: function() {return parseInt($(this).find('.year').text()) === 2019;},
+            year2020: function() {return parseInt($(this).find('.year').text()) === 2020;},
+            // show if name ends with -ium
+            ium: function() {
+                var name = $(this).find('.name').text();
+                return name.match( /ium$/ );
+            }
+        };
 
-    //$('.grid').isotope({ sortBy : 'random' });
-    
-    // init Isotope    
-    var $grid = $('.grid').isotope({
-        itemSelector: '.element-item',
-        percentPosition: true,
-        sortBy: 'random',
-        masonry: {
-        columnWidth: '.element-sizer',
-        }
-    });
+        // bind filter button click
+        $('.filters-button-group').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
 
-    // filter functions
-    var filterFns = {
-    // match year
-    year2016: function() {return parseInt($(this).find('.year').text()) === 2016;},
-    year2017: function() {return parseInt($(this).find('.year').text()) === 2017;},
-    year2018: function() {return parseInt($(this).find('.year').text()) === 2018;},
-    year2019: function() {return parseInt($(this).find('.year').text()) === 2019;},
-    year2020: function() {return parseInt($(this).find('.year').text()) === 2020;},
+        // use filterFn if matches value
+        filterValue = filterFns[ filterValue ] || filterValue;
+        $grid.isotope({ filter: filterValue,
+            percentPosition: true,
+            sortBy :'random',
+            stagger : 10,
+            masonry: {columnWidth: '.element-sizer'}
+            });
+        });
 
-    // show if name ends with -ium
-    ium: function() {
-        var name = $(this).find('.name').text();
-        return name.match( /ium$/ );
-    }
-    };
-
-
-    // bind filter button click
-    $('.filters-button-group').on( 'click', 'button', function() {
-    var filterValue = $( this ).attr('data-filter');
-    // use filterFn if matches value
-    filterValue = filterFns[ filterValue ] || filterValue;
-    $grid.isotope({ filter: filterValue,
-        percentPosition: true,
-        sortBy :'random',
-        stagger : 10,
-        masonry: {
-        columnWidth: '.element-sizer',
-        }
-               });
-    });
-
-    // change is-checked class on buttons
-    $('.button-group').each( function( i, buttonGroup ) {
-    var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'button', function() {
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        $( this ).addClass('is-checked');
-    });
-    });
+        // change is-checked class on buttons
+        $('.button-group').each( function( i, buttonGroup ) {
+            var $buttonGroup = $( buttonGroup );
+            $buttonGroup.on( 'click', 'button', function() {
+                $buttonGroup.find('.is-checked').removeClass('is-checked');
+                $( this ).addClass('is-checked');
+            });
+        });
 
         var $panels = $('.artist-item');
 
         $('#filter').on('keyup', function() {
             var val = this.value.toLowerCase();
-
             $panels.show().filter(function() {
                 var panelTitleText = $(this).find('.panel-title').text().toLowerCase();
                 return panelTitleText.indexOf(val) < 0;
@@ -500,12 +463,10 @@ $(document).ready(function(){
 </script>
 
 
-
 <!-- script for lanching the modal windows-->
 
 <!-- jQuery -->
 <script src="js/jquery-3.4.1.min.js"></script>
-
 <script src="js/isotope.pkgd.min.js"></script>
 
 <!-- Bootstrap JS -->
