@@ -228,7 +228,7 @@ body {
 
 
 .carousel-content .carousel-item .embed-responsive,
-.carousel-content .carousel-item img { box-shadow: 0 0 15px 0 #444; }
+.carousel-content .carousel-item img { box-shadow: 0 0 0px 0 #444; }
 
 .carousel-content .carousel-control-prev { left: -110px; border-bottom: 0; }
 .carousel-content .carousel-control-next { right: -110px; border-bottom: 0; }
@@ -236,11 +236,11 @@ body {
 
 .carousel-content .carousel-caption { position: relative; left: auto; right: auto; bottom: auto; }
 .carousel-content .carousel-caption h3 { color: #fff; }
-.carousel-content .carousel-caption .carousel-caption-description { color: #fff; color: rgba(255, 255, 255, 0.8); }
+.carousel-content .carousel-caption .carousel-caption-description { color: #fff; color: rgba(255, 255, 255, 0.8);}
 
 
 
-.carousel-content .carousel-indicators { bottom: -20px; }
+.carousel-content .carousel-indicators { bottom: -20px;}
 .carousel-content .carousel-indicators li {
    background-color: #A88852;
    width: 16px; height: 16px; margin-left: 10px; margin-right: 10px; border-radius: 50%; 
@@ -358,7 +358,7 @@ hr.socket {
    font-size: 1.3rem;
    color: lightgrey;
    text-transform: uppercase;
-   line-height: 1rem;
+   line-height: 1.4rem;
 }
 
  .row-striped .badge{
@@ -389,7 +389,7 @@ hr.socket {
 .modal {
    display: none; /* Hidden by default */
    position: fixed; /* Stay in place */
-   z-index: 1; /* Sit on top */
+   z-index: 100; /* Sit on top */
    left: 0;
    top: 0;
    width: 100%; /* Full width */
@@ -428,11 +428,18 @@ hr.socket {
  }
 
  .modal-text {
-   text-transform: uppercase;
+   /*text-transform: uppercase;*/
    font-weight: 500;
    padding-bottom: 1rem;
    text-align: justify;
+   white-space:pre-wrap;
+   font-size: 1.1rem;
+   line-height: 1.7rem;
 
+}
+
+.modal .mod-link{
+   display: none;
 }
  
  #caption {
@@ -446,6 +453,16 @@ hr.socket {
    height: 50px;
  }
 
+ .modal b{
+    color: #A88852;
+    text-transform: uppercase;
+    font-weight: 900;
+ }
+
+ .modal .copyright{
+    font-size: 0.95rem;
+    font-weight: 300;
+ }
 
  /* Add Animation */
  .modal-img, #caption {  
@@ -535,10 +552,12 @@ ul.social-proj li{
       max-width: 700px;
     }
 
+    
     .carousel-content .carousel-control-prev, 
     .carousel-content .carousel-control-next {
         display: none;
     }
+    
  
     .carousel-content .carousel-indicators li {
         margin-left: 10px;

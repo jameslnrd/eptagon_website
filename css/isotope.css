@@ -76,16 +76,14 @@
   .element-item,
   .element-sizer {
     width: 50%;
+
   }
   
 
   /* ---- .element-item ---- */
   
 
-  .element-item {
-    float: left;
-    height: auto;
-  }
+  
 
   .element-item--width2 { width: 100%; }
   .element-item--height2 { height: 200px; }
@@ -124,7 +122,6 @@
   opacity: 0.7;
   display: block;
   width: 100%;
-  height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
   padding: 0.5rem;
@@ -161,11 +158,21 @@
 }
 
 
-
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+  
   .element-sizer, .element-item {
-    width: 20%;
+    width: 25%;
   }
-  .element-item--width2 { width: 40%; }
+  .element-item--width2 { width: 50%; }
+}
+
+
+
+@media (min-width: 1500px) {
+  
+  .element-sizer, .element-item {
+    width: 16.66%;
+  }
+  .element-item--width2 { width: 33.33%; }
 }
 
