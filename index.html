@@ -38,7 +38,7 @@
 
 	<!-- Navigation -->
 
-	<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+	<nav id="nav-main" class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
 		<a href="index.html" class="navbar-brand">
 			<img src="img/logo_epta.png" alt="Logo">
 		</a>
@@ -94,6 +94,18 @@
 		<h1 class="text-light text-uppercase pb-3 pb-md-4"><img src="img/logo_epta_white2.png" alt="Logo"></h1>
 
 		<a href="#about" class=""><i class="fas fa-chevron-down fa-3x"></i></a>
+	</div>
+	<div class="home-bottom">
+		<ul class="landing-links pt-3 pb-1">
+			<li><a href="https://www.facebook.com/collectif.eptagon/" target="_blank">
+				<i class="fab fa-facebook-square"></i></a></li>
+			<li><a href="https://collectifeptagon.bandcamp.com/releases" target="_blank">
+				<i class="fab fa-bandcamp"></i></a></li>
+			<li><a href="https://www.instagram.com/collectif.eptagon/" target="_blank">
+				<i class="fab fa-instagram-square"></i></a></li>
+			<li><a href="https://www.youtube.com/channel/UCEoVYR4pFjEFUkUrHNl3ZvA" target="_blank">
+				<i class="fab fa-youtube-square"></i></a></li>
+		</ul>
 	</div>
 
 
@@ -322,6 +334,10 @@
 					</div>
 				</div>
 			</div>
+			<div class="intro dark text-light">
+				<p>Visit the complete <a href="projects.html">Eptagon Gallery</a>.</p>
+			</div>
+
 			<a href="#dates" class="arrow"><i class="fas fa-chevron-down fa-3x pb-2"></i></a>
 
 		</div>
@@ -331,7 +347,7 @@
 
 
 <div id = "dates" class="offset">
-	<div id="date-container" class="col-10 col-lg-5 container text-center pt-3 pb-3">
+	<div id="date-container" class="col-10 col-lg-5 container text-center pb-3">
 		<h2 class="heading  text-center pt-4 mb-0">Dates</h2>
 
             
@@ -446,13 +462,13 @@
 				<p></p>
 
 				<ul class="social pt-3 pb-1">
-					<li><a href="https://github.com/jameslnrd" target="_blank">
+					<li><a href="https://www.facebook.com/collectif.eptagon/" target="_blank">
 						<i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="https://github.com/jameslnrd" target="_blank">
+					<li><a href="https://collectifeptagon.bandcamp.com/releases" target="_blank">
 						<i class="fab fa-bandcamp"></i></a></li>
-					<li><a href="https://github.com/jameslnrd" target="_blank">
+					<li><a href="https://www.instagram.com/collectif.eptagon/" target="_blank">
 						<i class="fab fa-instagram-square"></i></a></li>
-					<li><a href="https://github.com/jameslnrd" target="_blank">
+					<li><a href="https://www.youtube.com/channel/UCEoVYR4pFjEFUkUrHNl3ZvA" target="_blank">
 						<i class="fab fa-youtube-square"></i></a></li>
 				</ul>
 			</div>
@@ -560,6 +576,9 @@
 
 
 <script>
+	$('.navbar-nav>li>a').on('click', function(){
+		$('.navbar-collapse').collapse('hide');
+	});
 </script>
 
 <!-- Script Source Files -->
