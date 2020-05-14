@@ -26,8 +26,6 @@
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
-
 
 </head>
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -551,30 +549,6 @@
 
 
 <script>
-
-$( ".carousel .carousel-inner" ).swipe( {
-    swipeLeft: function ( event, direction, distance, duration, fingerCount ) {
-		this.parent( ).carousel( 'next' );
-		console.log("swiping");
-
-    },
-    swipeRight: function ( ) {
-		this.parent( ).carousel( 'prev' );
-		console.log("swiping");
-
-    },
-    threshold: 0,
-    tap: function(event, target) {
-        window.location = $(this).find('.carousel-item.active a').attr('href');
-    },
-    excludedElements:"label, button, input, select, textarea, .noSwipe"
-    } );
-
-    $('.carousel .carousel-inner').on('dragstart', 'a', function () {
-        return false;
-	});  
-	
-
 </script>
 
 <!-- Script Source Files -->
