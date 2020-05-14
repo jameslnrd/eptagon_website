@@ -238,16 +238,41 @@ document.getElementById("project-descr").onclick = function() {
 }
 
 function modalfadeOut(){
-	$("#myModal").fadeOut();
 
-	for (let element of document.getElementsByClassName("mod-link")){
-		element.style.display="none";
-	 }
-	projCopy.innerHTML='';
+	$('#myModal').animate(
+		{ scrollTop: 0 }, 
+		400).fadeOut(400).dequeue();
+	$("#myModal").promise().done(function(){
+		for (let element of document.getElementsByClassName("mod-link")){
+			element.style.display="none";
+		 }
+		projCopy.innerHTML='';	
+		var $body = $(document.body);
+		$body.css("overflow", "auto");
+		$body.width("auto");
+	});
+
+
+
+	//document.querySelector("body").style.overflow = 'visible';
+
+
+
+
+
 }
 
 function modalfadeIn(){
 	$("#myModal").fadeIn();
+
+	var $body = $(document.body);
+	var oldWidth = $body.innerWidth();
+	$body.css("overflow", "hidden");
+	$body.width(oldWidth);
+
+	//document.querySelector("body").style.overflow = 'hidden';
+
+
 }
 
 function hasClass(element, cls) {
