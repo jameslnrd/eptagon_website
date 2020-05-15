@@ -157,9 +157,9 @@ ul.landing-links li{
    font-size: 1.5rem;
 }
 
-.landing-links .svg-inline--fa:hover {
+/*.landing-links .svg-inline--fa:hover {
    color: #D9CAA5;
-}
+}*/
 
 
 
@@ -474,6 +474,8 @@ hr.socket {
 
 .modal .svg-inline--fa {
    font-size: 2.2rem;
+   color: #D9CAA5;
+
 }
 
 .modal .svg-inline--fa:hover {
@@ -582,7 +584,7 @@ ul.social-proj li{
  /* 100% Image Width on Smaller Screens */
  @media only screen and (max-width: 700px){
    .modal-content {
-     width: 100%;
+     width: 90%;
    }
 
    .caption img{
@@ -642,7 +644,18 @@ ul.social-proj li{
    }
    
    .landing-links .svg-inline--fa {
-      font-size: 1.1rem;
+      font-size: 1.6rem;
+   }
+
+   .modal .svg-inline--fa {
+      font-size: 1.5rem;
+      color: #D9CAA5;
+
+   }
+
+   
+   ul.social-proj li{
+      padding: 0.5rem;
    }
 
 
@@ -704,7 +717,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
    top: 0;
    left: 0;
    width: 100%;
-   height: 100vh;
+   height: 100%;
 }
 .home-inner {
    display: table;
