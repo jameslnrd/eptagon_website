@@ -64,6 +64,8 @@ document.getElementById("maieutiste").onclick = function(){
 
 document.getElementById("orcae").onclick = function(){
 	modalImg.src = this.src;
+	projCopy.innerHTML = "&copy;photo: Niflheim";
+
 
 	projectName.textContent = "Orcæ";
 	projectGenre.textContent = "Experimental Electroacoustic";
@@ -90,6 +92,8 @@ document.getElementById("orcae").onclick = function(){
 
 document.getElementById("epitaphe").onclick = function(){
 	modalImg.src = this.src;
+	projCopy.innerHTML = "&copy;artwork: Petri Ala-Maunus";
+
 
 	projectName.textContent = "Epitaphe";
 	projectGenre.textContent = "Death / Doom Metal";
@@ -111,36 +115,70 @@ I, in its doomed torment, is a distraught journey through blackness, fury and me
 
 document.getElementById("gaillardon").onclick = function(){
 	modalImg.src = this.src;
+	projCopy.innerHTML = "&copy;photo: Jules Bocquet";
+
 
 	projectName.textContent = "Nico Gaillardon";
-	projectGenre.textContent = "Multimedia & Noise/Drone Artist";
-	projectDescr.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id elit at libero ultrices tempus. Nam sit amet malesuada augue, vel interdum risus. Fusce volutpat ex diam, vitae bibendum ante placerat eu. Aenean tempor, turpis a sodales tristique, urna orci tincidunt velit, vel porttitor purus ipsum faucibus dolor. Vestibulum sollicitudin ultrices laoreet. Praesent quis viverra mauris. Curabitur nisi est, posuere vel tristique id, scelerisque sit amet elit.";
+	projectGenre.textContent = "Multimedia & Noise Artist";
+
+	projectDescr.innerHTML = 
+"Nico Gaillardon is a pluridisciplinary artist at the head of several musical projects (Paranoid Summer, Low Reality, Noise for Souls). Also expressing his work  through drawings, installations and animation films, he creates a world of melancholic and sometimes violent poetry, creating atmospheres reminescent of an elusive road movie.<br/>\
+With <b>Paranoid Summer</b>, he invites the listener into a universe of noise energy, inside which words and chants emerge from dense layers of sound and chaotic melodies, accompanied by roughly edited video footage.<br/>\
+With <b>Low Reality</b>,  he creates a visual and sonic universe with drummer Morgan Cornebert, in which sheets of noise slide progressively towards hypnotising rythms, samples, and glitches to yield a state of electric transe.<br/>\
+The <b>Noise for Souls</b> project, with Jules Bocquet and Pauline Auby, offers intimate live musical and audio-visual performances: a space where ephemeral collaborations may take place between musicians and videographers, during the time of a session."
+
 
 	document.getElementById("mod-fb-li").style.display = "inline";
-	document.getElementById("mod-fb-link").href = "https://www.facebook.com";
+	document.getElementById("mod-fb-link").href = "https://www.facebook.com/LowReality/";
 
 	document.getElementById("mod-bc-li").style.display = "inline";
-	document.getElementById("mod-bc-link").href = "rerere";
-
-	document.getElementById("mod-sc-li").style.display = "inline";
-	document.getElementById("mod-sc-link").href = "https://www.facebook.com";
+	document.getElementById("mod-bc-link").href = "https://paranoidsummer.bandcamp.com/album/paranoid-summer";
 
 	document.getElementById("mod-yt-li").style.display = "inline";
-	document.getElementById("mod-yt-link").href = "rerere";
+	document.getElementById("mod-yt-link").href = "https://www.youtube.com/channel/UCOrWsTf0Sk-Q4tKMggs86tA";
 
-	document.getElementById("mod-ins-li").style.display = "none";
-	document.getElementById("mod-ins-link").href = "https://www.facebook.com";
+	document.getElementById("mod-ins-li").style.display = "inline";
+	document.getElementById("mod-ins-link").href = "https://www.instagram.com/lowrealityexperience/";
 
-	document.getElementById("mod-web-li").style.display = "none";
-	document.getElementById("mod-web-link").href = "rerere";
+	document.getElementById("mod-web-li").style.display = "inline";
+	document.getElementById("mod-web-link").href = "http://www.nicolasgaillardon.com/";
 }
+
+
+document.getElementById("iranon").onclick = function(){
+	modalImg.src = this.src;
+
+	projectName.textContent = "Iranon";
+	projectGenre.textContent = "Progressive Electro";
+	projectDescr.innerHTML = 
+"<b>Iranon</b> is the musical solo project of Luc Messina, guitar player and composer of the bands Demenseed and Liquid Flesh.<br/>\
+The music of Iranon is mainly electronic but embraces a wide range of influences, whether it be ambient, IDM, classical music, progressive rock or nu jazz.<br/>\
+His debut album “Painting the Sound” was released in 2011. This ambient record was composed and produced in three weeks for the netlabel Sirona Records. Since then, the artist produced and released a few songs for compilations or short film soundtracks, including the Sirona Records compilation “Sincerity is the Key” and the Eptagon 2019 Sampler."
+
+	document.getElementById("mod-fb-li").style.display = "inline";
+	document.getElementById("mod-fb-link").href = "https://www.facebook.com/Iranonsound";
+	document.getElementById("mod-bc-li").style.display = "inline";
+	document.getElementById("mod-bc-link").href = "https://iranon.bandcamp.com/";
+	document.getElementById("mod-sc-li").style.display = "inline";
+	document.getElementById("mod-sc-link").href = "https://soundcloud.com/iranon";
+
+}
+
 
 document.getElementById("liquidflesh").onclick = function(){
 	modalImg.src = this.src;
 
 	projectName.textContent = "Liquid Flesh";
 	projectGenre.textContent = "Purulent Death Metal";
-	projectDescr.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id elit at libero ultrices tempus. Nam sit amet malesuada augue, vel interdum risus. Fusce volutpat ex diam, vitae bibendum ante placerat eu. Aenean tempor, turpis a sodales tristique, urna orci tincidunt velit, vel porttitor purus ipsum faucibus dolor. Vestibulum sollicitudin ultrices laoreet. Praesent quis viverra mauris. Curabitur nisi est, posuere vel tristique id, scelerisque sit amet elit.";
+	projectDescr.innerHTML = 
+"<b>Liquid Flesh</b> is an old school death metal trio from the french Alps.<br/>\
+Influenced by bands like Entombed, Celtic Frost, Undergang or Autopsy, the band plays catchy songs with purulent atmospheres, drawing inspiration from sci-fi and horror movies.<br/>\
+The band was founded in 2014 by active members of the Grenoble metal scene, Gastric Luke on guitar and Glaviar on drums (both from the band Demenseed), Gerbator on vocals (from Nocturnal Depression) and David Ordure on bass, quickly recording its debut album Spontaneous Liquefaction, with Gastric Luke in charge of production, mastering and artwork.<br/>\
+In 2018, Putrid Bruce, also vocalist of Epitaphe and Influence Néfaste, joins the band as vocalist and bass player: the band then becomes a power trio. The music of Liquid Flesh is now more sophisticated but more radical, characterized by a relentless punk energy but still driven by an old school horror/sci-fi vibe.<br/>\
+The trio joins the artist collective Eptagon in 2019, and starts recording a second album in summer 2019, named <b>Chair Liquide</b>. The album will be released in Autumn 2020 via Metal Is The Law Records."
+
+
+	projCopy.innerHTML = "&copy;photo: Oofzos.fr";
 
 	document.getElementById("mod-fb-li").style.display = "inline";
 	document.getElementById("mod-fb-link").href = "https://www.facebook.com";
@@ -166,25 +204,23 @@ document.getElementById("james").onclick = function(){
 
 	projectName.textContent = "Plastic Lobster";
 	projectGenre.textContent = "Sound Engineer, Digital Artist";
-	projectDescr.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id elit at libero ultrices tempus. Nam sit amet malesuada augue, vel interdum risus. Fusce volutpat ex diam, vitae bibendum ante placerat eu. Aenean tempor, turpis a sodales tristique, urna orci tincidunt velit, vel porttitor purus ipsum faucibus dolor. Vestibulum sollicitudin ultrices laoreet. Praesent quis viverra mauris. Curabitur nisi est, posuere vel tristique id, scelerisque sit amet elit.";
+
+	projectDescr.innerHTML = 
+	"Plastic Lobster is one of the many aliases for James Leonard, a musician, sound artist and producer.<br/>\
+His musical drive ranges from dense and unrelenting forms of extreme metal as developed in <b>Barús</b>, to experimental avant-garde noise with the improvisation collective <b>Orcæ</b>, making frequent stops somewhere between post-rock, electronica.<br/>\
+Other current and past musical projects include Azimut, Maïeutiste, Jambalaya Window, Altered Beats, Wolflust and Foutrang.<br/>\
+With <b>Plastic Lobster Studios</b>, he has recorded, mixed and/or mastered over twenty records, several of which have been released by renowned labels (Les Acteurs de l’Ombre, Memento Mori, Aesthetic Death, Metal On Metal…).<br/>\
+He strives to capture the raw power and dynamics of each band and the singularities of each musician within them, firmly believing that an organic and personal sound are what bring out a band’s identity."
+
 
 	document.getElementById("mod-fb-li").style.display = "inline";
-	document.getElementById("mod-fb-link").href = "https://www.facebook.com";
-
+	document.getElementById("mod-fb-link").href = "https://www.facebook.com/plasticlobsterstudios/";
 	document.getElementById("mod-bc-li").style.display = "inline";
-	document.getElementById("mod-bc-link").href = "rerere";
-
-	document.getElementById("mod-sc-li").style.display = "inline";
-	document.getElementById("mod-sc-link").href = "https://www.facebook.com";
-
+	document.getElementById("mod-bc-link").href = "rerehttps://jambalayawindow.bandcamp.com/album/the-sounding-leadre";
 	document.getElementById("mod-yt-li").style.display = "inline";
-	document.getElementById("mod-yt-link").href = "rerere";
-
-	document.getElementById("mod-ins-li").style.display = "none";
-	document.getElementById("mod-ins-link").href = "https://www.facebook.com";
-
-	document.getElementById("mod-web-li").style.display = "none";
-	document.getElementById("mod-web-link").href = "rerere";
+	document.getElementById("mod-yt-link").href = "https://www.youtube.com/channel/UCAoMCrpTKqETGjlum1RxC3g";
+	document.getElementById("mod-web-li").style.display = "inline";
+	document.getElementById("mod-web-link").href = "https://plasticlobsterstudios.com/";
 }
 
 document.getElementById("demenseed").onclick = function(){
@@ -219,7 +255,9 @@ document.getElementById("fia").onclick = function(){
 
 	projectName.textContent = "Faith In Agony";
 	projectGenre.textContent = "Grunge / Alternative Metal";
-	projectDescr.innerHTML = "Straight out of a 90s garage, the emerging alternative metal band <b>Faith in Agony</b> distinguishes itself through vivid melodies, efficient riffs and persistent vocal harmonies. \r\nThe quartet proceeds frantically while mixing heavy dynamics with deep nuances, which reflects an electric energy created on stage. Riffing from grunge to blues, the musical ensemble has positioned itself within a dynamic and accessible musical style with a strong wish for proximity with its listeners. \r\nFaiths in Agony released their first eponymous EP in October 2016 and are presently defending their most recent opus <b>Do Not Repeat</b>. After standing out as the opening act for Ultra Vomit and during several festivals (Rock O'marais, Festirock), the band is actively working on the release of their first album.";
+	projectDescr.innerHTML = "Straight out of a 90s garage, the emerging alternative metal band <b>Faith in Agony</b> distinguishes itself through vivid melodies, efficient riffs and persistent vocal harmonies. <br/>\
+	The quartet proceeds frantically while mixing heavy dynamics with deep nuances, which reflects an electric energy created on stage. Riffing from grunge to blues, the musical ensemble has positioned itself within a dynamic and accessible musical style with a strong wish for proximity with its listeners. <br/>\
+	Faith in Agony released their first eponymous EP in October 2016 and are presently defending their most recent opus <b>Do Not Repeat</b>. After standing out as the opening act for Ultra Vomit and during several festivals (Rock O'marais, Festirock), the band is actively working on the release of their first album.";
 
 	document.getElementById("mod-fb-li").style.display = "inline";
 	document.getElementById("mod-fb-link").href = "https://www.facebook.com/faithinagony/";
@@ -252,14 +290,6 @@ function modalfadeOut(){
 		$body.width("auto");
 	});
 
-
-
-	//document.querySelector("body").style.overflow = 'visible';
-
-
-
-
-
 }
 
 function modalfadeIn(){
@@ -269,9 +299,6 @@ function modalfadeIn(){
 	var oldWidth = $body.innerWidth();
 	$body.css("overflow", "hidden");
 	$body.width(oldWidth);
-
-	//document.querySelector("body").style.overflow = 'hidden';
-
 
 }
 
