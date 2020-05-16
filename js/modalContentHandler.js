@@ -288,6 +288,8 @@ function modalfadeOut(){
 		var $body = $(document.body);
 		$body.css("overflow", "auto");
 		$body.width("auto");
+		// stop the menu from sliding when removing scroll
+		$("#nav-main").css("padding-right", "0px");
 	});
 
 }
@@ -299,6 +301,10 @@ function modalfadeIn(){
 	var oldWidth = $body.innerWidth();
 	$body.css("overflow", "hidden");
 	$body.width(oldWidth);
+	
+	// stop the menu from sliding when removing scroll
+	$("#nav-main").css("padding-right", "4px");
+
 
 }
 

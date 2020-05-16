@@ -96,6 +96,7 @@ body {
    text-transform: uppercase;
    letter-spacing: .1rem;
    background-color: #222529!important;
+   padding-right: 0px;
 }
 
 .navbar-nav li {
