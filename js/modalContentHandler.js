@@ -220,7 +220,7 @@ He strives to capture the raw power and dynamics of each band and the singularit
 	document.getElementById("mod-yt-li").style.display = "inline";
 	document.getElementById("mod-yt-link").href = "https://www.youtube.com/channel/UCAoMCrpTKqETGjlum1RxC3g";
 	document.getElementById("mod-web-li").style.display = "inline";
-	document.getElementById("mod-web-link").href = "https://plasticlobsterstudios.com/";
+	document.getElementById("mod-web-link").href = "http://plasticlobsterstudios.com/";
 }
 
 document.getElementById("demenseed").onclick = function(){
