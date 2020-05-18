@@ -216,7 +216,7 @@ He strives to capture the raw power and dynamics of each band and the singularit
 	document.getElementById("mod-fb-li").style.display = "inline";
 	document.getElementById("mod-fb-link").href = "https://www.facebook.com/plasticlobsterstudios/";
 	document.getElementById("mod-bc-li").style.display = "inline";
-	document.getElementById("mod-bc-link").href = "rerehttps://jambalayawindow.bandcamp.com/album/the-sounding-leadre";
+	document.getElementById("mod-bc-link").href = "https://jambalayawindow.bandcamp.com/album/the-sounding-lead";
 	document.getElementById("mod-yt-li").style.display = "inline";
 	document.getElementById("mod-yt-link").href = "https://www.youtube.com/channel/UCAoMCrpTKqETGjlum1RxC3g";
 	document.getElementById("mod-web-li").style.display = "inline";
@@ -296,7 +296,6 @@ function modalfadeOut(){
 
 function modalfadeIn(){
 	$("#myModal").fadeIn();
-
 	var $body = $(document.body);
 	var oldWidth = $body.innerWidth();
 	$body.css("overflow", "hidden");
@@ -312,9 +311,6 @@ function hasClass(element, cls) {
 	return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
 $(document).click(function(event) {
 	$target = $(event.target);
 	if(!hasClass($(event.target)[0], 'artist-image')){
@@ -327,8 +323,24 @@ $(document).click(function(event) {
 		modalfadeIn();
 });
 
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-	modalfadeOut();
-}
+//span.onclick = function() {
+	//modalfadeOut();
+	//document.getElementsByClassName("close").hide();
+	/*
+	$('#myModal').hide();
+	for (let element of document.getElementsByClassName("mod-link")){
+		element.style.display="none";
+	 }
+	projCopy.innerHTML='';	
+	var $body = $(document.body);
+	$body.css("overflow", "auto");
+	$body.width("auto");
+	// stop the menu from sliding when removing scroll
+	$("#nav-main").css("padding-right", "0px");
+	*/
+//}
