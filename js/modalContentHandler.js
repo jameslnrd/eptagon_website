@@ -41,25 +41,21 @@ document.getElementById("maieutiste").onclick = function(){
 
 	projectName.textContent = "Maïeutiste";
 	projectGenre.textContent = "Progressive Black Metal";
-	projectDescr.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id elit at libero ultrices tempus. Nam sit amet malesuada augue, vel interdum risus. Fusce volutpat ex diam, vitae bibendum ante placerat eu. Aenean tempor, turpis a sodales tristique, urna orci tincidunt velit, vel porttitor purus ipsum faucibus dolor. Vestibulum sollicitudin ultrices laoreet. Praesent quis viverra mauris. Curabitur nisi est, posuere vel tristique id, scelerisque sit amet elit.";
+
+	projectDescr.innerHTML =
+"The French act was born in 2006, initiated by Eheuje and Keithan. This core duet is supported and pushed by collective approach in the creative process which has allowed the band to evolve for 13 years.<br/>\
+Taking its name from the art of bringing a person’s latent ideas into clear consciousness, <b>Maïeutiste</b> explores the different perspectives and dimensions of hidden the inaccessible truth, trying to draw the light out of obscurity through poetic approach.<br/>\
+Despite a universe deeply rooted in the black metal field, Maïeutiste shatter all the boundaries of the genre by exploring progressive, jazzy, acoustic and orchestral sonorities through their music. The first album, invites you to travel into the cosmos of the being, a Faustian journey about inner self.<br/>\
+Through a poetic approach, their new offering <b>Veritas</b> deals with the notion of forbidden wisdom and the essence of the concept of Truth itself. Unveiling a baroque aesthetic, this album promises a new travel through mind limbos."
 
 	document.getElementById("mod-fb-li").style.display = "inline";
-	document.getElementById("mod-fb-link").href = "https://www.facebook.com";
-
+	document.getElementById("mod-fb-link").href = "https://www.facebook.com/maieutisteofficial/";
 	document.getElementById("mod-bc-li").style.display = "inline";
-	document.getElementById("mod-bc-link").href = "rerere";
-
-	document.getElementById("mod-sc-li").style.display = "inline";
-	document.getElementById("mod-sc-link").href = "https://www.facebook.com";
-
+	document.getElementById("mod-bc-link").href = "https://maieutiste.bandcamp.com/";
 	document.getElementById("mod-yt-li").style.display = "inline";
-	document.getElementById("mod-yt-link").href = "rerere";
-
+	document.getElementById("mod-yt-link").href = "https://www.youtube.com/channel/UCC5wQatg3nG_ddkIgkqp6mA";
 	document.getElementById("mod-ins-li").style.display = "none";
-	document.getElementById("mod-ins-link").href = "https://www.facebook.com";
-
-	document.getElementById("mod-web-li").style.display = "none";
-	document.getElementById("mod-web-link").href = "rerere";
+	document.getElementById("mod-ins-link").href = "https://www.instagram.com/maieutiste_band/";
 }
 
 document.getElementById("orcae").onclick = function(){
@@ -69,25 +65,21 @@ document.getElementById("orcae").onclick = function(){
 
 	projectName.textContent = "Orcæ";
 	projectGenre.textContent = "Experimental Electroacoustic";
-	projectDescr.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id elit at libero ultrices tempus. Nam sit amet malesuada augue, vel interdum risus. Fusce volutpat ex diam, vitae bibendum ante placerat eu. Aenean tempor, turpis a sodales tristique, urna orci tincidunt velit, vel porttitor purus ipsum faucibus dolor. Vestibulum sollicitudin ultrices laoreet. Praesent quis viverra mauris. Curabitur nisi est, posuere vel tristique id, scelerisque sit amet elit.";
+
+	projectDescr.innerHTML = 
+"<b>Orcæ</b> is a musical structure formed in early 2017 through the aggregation of three atoms that had been circling around each other for years, but at an energy too high to stabilise. They are sometimes joined by free electrons, musicians or visual artists adding their own wave function to the collective.<br/>\
+Founded with the idea of creating post-rock music, the Orcæ molecule abandons “rock” after a few minutes, and “post” within a few hours. The drummer no longer brings his sticks, the guitarist uses a bow and turns his amp to π rather than 11, and the keyboardist specialises in computer-voice assisted humour.<br/>\
+Atoms then start to vibrate, without any premeditation and through wordless communication, improvising any way the solar winds blow, across the realms of drone, electronica and contemporary music. They are bound by one elementary interaction: the love of sound in all forms.<br/>\
+The only valid rule: always repeat mistakes until they sound intentional."
 
 	document.getElementById("mod-fb-li").style.display = "inline";
-	document.getElementById("mod-fb-link").href = "https://www.facebook.com";
-
+	document.getElementById("mod-fb-link").href = "https://www.facebook.com/orcae/";
 	document.getElementById("mod-bc-li").style.display = "inline";
-	document.getElementById("mod-bc-link").href = "rerere";
-
+	document.getElementById("mod-bc-link").href = "https://orcae.bandcamp.com/";
 	document.getElementById("mod-sc-li").style.display = "inline";
-	document.getElementById("mod-sc-link").href = "https://www.facebook.com";
-
-	document.getElementById("mod-yt-li").style.display = "inline";
-	document.getElementById("mod-yt-link").href = "rerere";
-
-	document.getElementById("mod-ins-li").style.display = "none";
-	document.getElementById("mod-ins-link").href = "https://www.facebook.com";
-
-	document.getElementById("mod-web-li").style.display = "none";
-	document.getElementById("mod-web-link").href = "rerere";
+	document.getElementById("mod-sc-link").href = "https://soundcloud.com/orcae";
+	document.getElementById("mod-web-li").style.display = "inline";
+	document.getElementById("mod-web-link").href = "https://orcaescapes.github.io/";
 }
 
 document.getElementById("epitaphe").onclick = function(){
@@ -148,6 +140,8 @@ The <b>Noise for Souls</b> project, with Jules Bocquet and Pauline Auby, offers 
 document.getElementById("iranon").onclick = function(){
 	modalImg.src = this.src;
 
+	projCopy.innerHTML = "&copy;photo: Ksenia";
+
 	projectName.textContent = "Iranon";
 	projectGenre.textContent = "Progressive Electro";
 	projectDescr.innerHTML = 
@@ -181,22 +175,15 @@ The trio joins the artist collective Eptagon in 2019, and starts recording a sec
 	projCopy.innerHTML = "&copy;photo: Oofzos.fr";
 
 	document.getElementById("mod-fb-li").style.display = "inline";
-	document.getElementById("mod-fb-link").href = "https://www.facebook.com";
-
+	document.getElementById("mod-fb-link").href = "https://www.facebook.com/liquidflesh.deathmetal/";
 	document.getElementById("mod-bc-li").style.display = "inline";
-	document.getElementById("mod-bc-link").href = "rerere";
-
+	document.getElementById("mod-bc-link").href = "https://liquidfleshdeathmetal.bandcamp.com/releases";
 	document.getElementById("mod-sc-li").style.display = "inline";
-	document.getElementById("mod-sc-link").href = "https://www.facebook.com";
-
-	document.getElementById("mod-yt-li").style.display = "inline";
-	document.getElementById("mod-yt-link").href = "rerere";
-
-	document.getElementById("mod-ins-li").style.display = "none";
-	document.getElementById("mod-ins-link").href = "https://www.facebook.com";
-
-	document.getElementById("mod-web-li").style.display = "none";
-	document.getElementById("mod-web-link").href = "rerere";
+	document.getElementById("mod-sc-link").href = "https://soundcloud.com/liquid-flesh";
+	document.getElementById("mod-tw-li").style.display = "inline";
+	document.getElementById("mod-tw-link").href = "https://twitter.com/liquid_flesh";
+	document.getElementById("mod-ins-li").style.display = "inline";
+	document.getElementById("mod-ins-link").href = "https://www.instagram.com/liquidfleshdeathmetal/";
 }
 
 document.getElementById("james").onclick = function(){
@@ -268,6 +255,27 @@ document.getElementById("fia").onclick = function(){
 
 }
 
+
+document.getElementById("jubo").onclick = function(){
+	modalImg.src = this.src;
+
+	projectName.textContent = "Jules Bocquet";
+	projectGenre.textContent = "Videographer";
+	projectDescr.innerHTML = 
+"Jules explores the film media in its various forms, often in conjunction with other artistic bodies.<br/>\
+Holder of a masters degree in Artistic Creation specialised in Cinema in 2019, his passion for film technique has led him to work onvarious projects: live-music or theatre recording, camera operator for short films, performances, events…<br/>\
+A stronger creative component emerges through his recent work, as in the recent project Noise for Souls (live music) and on more personal productions. Equally interested in pedagogy, he is currently working on dematerialised learning material dedicated to film making."
+
+	document.getElementById("mod-vm-li").style.display = "inline";
+	document.getElementById("mod-vm-link").href = "https://vimeo.com/jubovideo";
+	document.getElementById("mod-yt-li").style.display = "inline";
+	document.getElementById("mod-yt-link").href = "https://www.youtube.com/channel/UCR5b2kiIuIkZ-v01UlyxA7w";
+	document.getElementById("mod-ins-li").style.display = "inline";
+	document.getElementById("mod-ins-link").href = "https://www.instagram.com/jubo.video/";	
+
+
+}
+
 modalImg.onclick = function() {
 	modalfadeOut();
 }
@@ -322,6 +330,15 @@ $(document).click(function(event) {
 	else
 		modalfadeIn();
 });
+
+
+$(document).keyup(function(e) {
+	if (e.key === "Escape") { // escape key maps to keycode `27`
+	if($("#myModal").is(":visible") === true)
+		modalfadeOut();   
+	}
+});
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
