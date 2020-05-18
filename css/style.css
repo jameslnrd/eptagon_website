@@ -672,6 +672,16 @@ ul.social-proj li{
       padding: 0.5rem;
    }
 
+   ul.social li{
+      margin: 0 auto;
+      display: inline;
+      padding: 0.9rem;
+   }
+   
+   .footer .svg-inline--fa {
+      font-size: 1.6rem;
+   }
+
 
    
 
