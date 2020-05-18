@@ -362,6 +362,16 @@ hr.socket {
    border-top: .2rem solid #A88852;
 }
 
+.cryptedmail:after {
+   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+ }
+
+ .cryptedmail:hover {
+   color: #A88852;
+ }
+
+
+
 
 /*======== PARTNERS ==============*/
 
@@ -388,6 +398,7 @@ hr.socket {
    font-weight: 900;
    font-size: 1.1rem; 
 }
+
 
 
 /*============= DATES SECTION ==================*/
@@ -581,6 +592,7 @@ ul.social-proj li{
    display: inline;
    padding: 1rem;
 }
+
 
 
  
