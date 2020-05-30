@@ -538,6 +538,11 @@ hr.socket {
     font-weight: 900;
  }
 
+ .modal a{
+   color: #A88852;
+   font-weight: 900;
+}
+
  .modal .copyright{
     font-size: 0.95rem;
     font-weight: 300;

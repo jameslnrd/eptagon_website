@@ -276,11 +276,39 @@ A stronger creative component emerges through his recent work, as in the recent 
 
 }
 
+
+document.getElementById("jonas").onclick = function(){
+	modalImg.src = this.src;
+
+	projectName.textContent = "Jonas François";
+	projectGenre.textContent = "Saxophonist / Electronic Music Producer";
+	projectDescr.innerHTML = 
+'Jonas François is a saxophonist and electronic music producer. Originally from a jazz background, he has moved towards concrete and contemporary musical forms through styles as varied as ambient, trip hop and rap.<br/>\
+He is the manager of two music labels: <b>Raw Paradigm</b> and <b>Kraken Records</b>, and is involved in a multitude of projects: <a href="https://soundcloud.com/rqndohm" target="_blank">rqndohm</a> (ambient trip-hop), <a href="https://soundcloud.com/krknrecords" target="_blank">Folconn’42</a> (jungle), <a href="https://soundcloud.com/cellule-hit" target="_blank">Cellule Hit</a> (rap) and <a href="https://soundcloud.com/prince-francois-far-i" target="_blank">Prince François far I</a> (reggae dub).'
+
+	document.getElementById("mod-bc-li").style.display = "inline";
+	document.getElementById("mod-bc-link").href = "https://rawparadigm.bandcamp.com/";
+	document.getElementById("mod-fb-li").style.display = "inline";
+	document.getElementById("mod-fb-link").href = "https://www.facebook.com/krknrecords";
+	document.getElementById("mod-web-li").style.display = "inline";
+	document.getElementById("mod-web-link").href = "https://raw-paradigm.fr/";
+	document.getElementById("mod-sc-li").style.display = "inline";
+	document.getElementById("mod-sc-link").href = "https://soundcloud.com/krknrecords";
+
+
+}
+
 modalImg.onclick = function() {
 	modalfadeOut();
 }
-document.getElementById("project-descr").onclick = function() {
-	modalfadeOut();
+document.getElementById("project-descr").onclick = function(e) {
+	if($(e.target).closest('a').length){
+        //console.log('You clicked a link');
+    }
+    else{
+		//console.log('You did not click a link');
+		modalfadeOut();
+    }
 }
 
 function modalfadeOut(){

@@ -46,6 +46,12 @@ function showInfo(data, tabletop) {
 
     $("#date-container").append(dateContent);
   }
+
+  if(data.length === 0){
+    var dateContent = '<p class="intro dark text-light">No events currently scheduled.</p>';
+    $("#date-container").append(dateContent);
+
+  }
 }
 
 window.addEventListener('DOMContentLoaded', init);
