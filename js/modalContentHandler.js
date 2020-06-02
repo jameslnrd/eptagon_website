@@ -38,6 +38,8 @@ The band, described by reviewers as <i>\"Autopsy reinterpreted by Meshuggah\"</i
 
 document.getElementById("maieutiste").onclick = function(){
 	modalImg.src = this.src;
+	projCopy.innerHTML = "&copy;photo: Kaerell";
+
 
 	projectName.textContent = "Maïeutiste";
 	projectGenre.textContent = "Progressive Black Metal";
@@ -70,7 +72,7 @@ document.getElementById("orcae").onclick = function(){
 "<b>Orcæ</b> is a musical structure formed in early 2017 through the aggregation of three atoms that had been circling around each other for years, but at an energy too high to stabilise. They are sometimes joined by free electrons, musicians or visual artists adding their own wave function to the collective.<br/>\
 Founded with the idea of creating post-rock music, the Orcæ molecule abandons “rock” after a few minutes, and “post” within a few hours. The drummer no longer brings his sticks, the guitarist uses a bow and turns his amp to π rather than 11, and the keyboardist specialises in computer-voice assisted humour.<br/>\
 Atoms then start to vibrate, without any premeditation and through wordless communication, improvising any way the solar winds blow, across the realms of drone, electronica and contemporary music. They are bound by one elementary interaction: the love of sound in all forms.<br/>\
-The only valid rule: always repeat mistakes until they sound intentional."
+The only valid rule: always repeat mistakes to make them sound intentional."
 
 	document.getElementById("mod-fb-li").style.display = "inline";
 	document.getElementById("mod-fb-link").href = "https://www.facebook.com/orcae/";
@@ -188,6 +190,8 @@ The trio joins the artist collective Eptagon in 2019, and starts recording a sec
 
 document.getElementById("james").onclick = function(){
 	modalImg.src = this.src;
+	projCopy.innerHTML = "&copy;photo: No Tsrd";
+
 
 	projectName.textContent = "Plastic Lobster";
 	projectGenre.textContent = "Sound Engineer, Digital Artist";
@@ -212,6 +216,8 @@ He strives to capture the raw power and dynamics of each band and the singularit
 
 document.getElementById("demenseed").onclick = function(){
 	modalImg.src = this.src;
+	projCopy.innerHTML = "&copy;photo: Demenseed";
+
 
 	projectName.textContent = "Demenseed";
 	projectGenre.textContent = "Progressive Death Metal";
@@ -239,6 +245,8 @@ In 2018, after some member replacements, the band releases 3 different EPs: “B
 
 document.getElementById("fia").onclick = function(){
 	modalImg.src = this.src;
+	projCopy.innerHTML = "&copy;photo: Marchand Emmanuel";
+
 
 	projectName.textContent = "Faith In Agony";
 	projectGenre.textContent = "Grunge / Alternative Metal";
@@ -258,13 +266,15 @@ document.getElementById("fia").onclick = function(){
 
 document.getElementById("jubo").onclick = function(){
 	modalImg.src = this.src;
+	projCopy.innerHTML = "&copy;photo: Pauline Aubry";
+
 
 	projectName.textContent = "Jules Bocquet";
 	projectGenre.textContent = "Videographer";
 	projectDescr.innerHTML = 
 "Jules explores the film media in its various forms, often in conjunction with other artistic bodies.<br/>\
 Holder of a masters degree in Artistic Creation specialised in Cinema in 2019, his passion for film technique has led him to work onvarious projects: live-music or theatre recording, camera operator for short films, performances, events…<br/>\
-A stronger creative component emerges through his recent work, as in the recent project Noise for Souls (live music) and on more personal productions. Equally interested in pedagogy, he is currently working on dematerialised learning material dedicated to film making."
+A stronger creative component emerges through his recent work, as in the recent <b>Noise for Souls</b> project (live music) and on more personal productions. Equally interested in pedagogy, he is currently working on dematerialised learning material dedicated to film making."
 
 	document.getElementById("mod-vm-li").style.display = "inline";
 	document.getElementById("mod-vm-link").href = "https://vimeo.com/jubovideo";

@@ -37,7 +37,7 @@
       </div>
 
 <!-- Start Home Section -->
-<div id="home">
+<div id="">
 
 	<!-- Navigation -->
 	<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
@@ -88,8 +88,8 @@
 <div id="gallery" class="offset">
 
 	<!-- Start Container-Fluid -->
-	<div class="container-fluid text-center">
-		<h2 class="heading  text-center pt-4 pb-3 mb-0">
+	<div class="container-fluid text-center bigdiv">
+		<h2 class="heading text-center pt-4 pb-3 mb-0">
 			Gallery
 		</h2>
 
@@ -252,6 +252,18 @@
                         <div class="year bottom-right">2017</div>
                         <i class="icon fab fa-bandcamp"></i>
                     </div>
+
+                    <div class="element-item overflow-hidden releases">
+                        <a href="https://orcae.bandcamp.com/album/live-le-ciel-18-01-2020" target="_blank">
+                            <img id="barus" class="image w-100" src="img/gallery/orcae-live-ciel.jpg">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Orcae - Ciel (live)</div>
+                        </div>
+                        <div class="year bottom-right">2020</div>
+                        <i class="icon fab fa-bandcamp"></i>
+                    </div>
+
 
                     <!-- Epitaphe -->
                     <div class="element-item overflow-hidden releases">
@@ -588,8 +600,23 @@
 
 
 <!-- Start Contact Section -->
+
+
+<div id="" class="offset">
+	<div class="col-12 container intro selectors">
+		<div class="arrow row pt-1 pb-1 justify-content-center">
+            <i id="max" class="arrow fas fa-chevron-up fa-2x"></i>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
 <div id="contact" class="offset">
-	<div class="container-fluid footer">
+	<div id="gal-footer" class="container-fluid intro footer footer-bis">
 		<div class="row pt-5 pb-5 justify-content-center">	
 
 			<div class="col-sm-11 col-md-9 col-lg-6 text-light text-center">
@@ -616,11 +643,11 @@
 				 onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;"></a>
 				</p>
 
-				<p class="pt-2">Eptagon is an association under the French law of 1901 (entertainment licences 2 and 3).</p>
+				<!--p class="pt-2">Eptagon is an association under the French law of 1901.</p-->
 
 			</div>
 
-			<hr class="socket w-100 mt-5 mb-5">
+			<hr class="socket w-100 mt-2 mb-2">
 			<p class="mb-0 text-light text-center">
 				&copy;Eptagon 2020.
 				</br>
@@ -651,6 +678,19 @@
 
 <script>
     $(document).ready(function(){
+
+
+
+        $('#max').click(function() {
+            //console.log("clicked on maximize");
+            document.getElementById("max").style.display = "none";
+            document.getElementById("gal-footer").style.display = "inline";
+        });
+        $('#gal-footer').click(function() {
+            //console.log("clicked on minimize");
+            document.getElementById("max").style.display = "block";
+            document.getElementById("gal-footer").style.display = "none";
+        });
 
         var sortState = 0;
         var sorting = 'random';

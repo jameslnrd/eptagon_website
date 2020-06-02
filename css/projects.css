@@ -29,3 +29,28 @@
       top: 30%;
       z-index: 100;
   }
+
+  .bigdiv{
+  }
+
+
+  .selectors{
+    position: fixed; 
+    bottom:0%;
+    width:100%;
+    background-color: #222529!important;
+
+
+  }
+  
+  .footer-bis{
+    display: none;
+    
+    position: fixed; 
+    bottom:0%;
+    width:100%;
+        
+    border-top: 3px solid #A88852;
+    border-color: #A88852;
+  }
+  

@@ -13,6 +13,11 @@
     cursor: pointer;
   }
   
+  .button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
   .button:hover {
     background-color: #D9CAA5;
     text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
@@ -54,12 +59,17 @@
   .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
   */
 
+
+
+
   /* ---- isotope ---- */
   
 
+
+
   .grid-container {
     margin: 0 auto;
-    display: block;
+    display: block;    
   }
 
   .grid{
@@ -120,7 +130,7 @@
 
 
 .image {
-  opacity: 0.7;
+  opacity: 0.9;
   display: block;
   width: 100%;
   transition: .5s ease;
