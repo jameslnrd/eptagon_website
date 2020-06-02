@@ -132,7 +132,7 @@ The <b>Noise for Souls</b> project, with Jules Bocquet and Pauline Auby, offers 
 	document.getElementById("mod-yt-link").href = "https://www.youtube.com/channel/UCOrWsTf0Sk-Q4tKMggs86tA";
 
 	document.getElementById("mod-ins-li").style.display = "inline";
-	document.getElementById("mod-ins-link").href = "https://www.instagram.com/lowrealityexperience/";
+	document.getElementById("mod-ins-link").href = "https://www.instagram.com/low_reality_/";
 
 	document.getElementById("mod-web-li").style.display = "inline";
 	document.getElementById("mod-web-link").href = "http://www.nicolasgaillardon.com/";
@@ -142,7 +142,7 @@ The <b>Noise for Souls</b> project, with Jules Bocquet and Pauline Auby, offers 
 document.getElementById("iranon").onclick = function(){
 	modalImg.src = this.src;
 
-	projCopy.innerHTML = "&copy;photo: Ksenia";
+	projCopy.innerHTML = "&copy;photo: Ksenya";
 
 	projectName.textContent = "Iranon";
 	projectGenre.textContent = "Progressive Electro";

@@ -444,14 +444,12 @@ hr.socket {
 
  .row-striped a{
    text-decoration: none;
-   color: #A88852!important;
+   color: #fff!important;
 
  }
 
  .row-striped a:hover{
    text-decoration: none;
-   color: #A88852!important;
-
  }
 
  .row-striped .svg-inline--fa {

@@ -30,9 +30,6 @@
       z-index: 100;
   }
 
-  .bigdiv{
-  }
-
 
   .selectors{
     position: fixed; 
@@ -42,6 +39,7 @@
 
 
   }
+
   
   .footer-bis{
     display: none;

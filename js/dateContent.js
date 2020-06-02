@@ -25,6 +25,8 @@ function showInfo(data, tabletop) {
       dateList = date.toString().split(" ");
 
       //console.log(dateList.toString());
+      //<a href="' + event["link"] + '" target="_blank" >\
+      //</a> \
 
       var dateContent = '<div class="pt-3 row row-striped"> \
         <div class="col-2 text-right"> \
@@ -32,16 +34,18 @@ function showInfo(data, tabletop) {
             <h3>' + dateList[1] + '</h3> \
             <h3>' + dateList[3] + '</h3> \
         </div> \
-        <div class="col-10 text-light px-5"> \
-            <a href="' + event["link"] + '" target="_blank" ><h3 class="text-uppercase"><strong>' 
-                + event["name"] +  '</strong></h3></a> \
+        <div class="col-10 text-light px-5 text-center date-info"> \
+        <a href="' + event["link"] + '" target="_blank" >\
+            <h3 class="text-uppercase"><strong>' 
+                + event["name"] +  '</strong></h3> \
             <ul class="list-inline"> \
                 <li class="list-inline-item"><i class="far fa-calendar-alt" aria-hidden="true"></i> ' + dateList[0] + " " + dateList[1] + " " + dateList[2] + '</li> \
                 <li class="list-inline-item"><i class="far fa-clock" aria-hidden="true"></i> ' + dateList[4]+ '</li> \
                 <li class="list-inline-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> ' + event["location"] + '</li> \
             </ul> \
             <p>' + event["description"] + '</p> \
-        </div> \
+            </a> \
+        </div>\
     </div> '
 
     $("#date-container").append(dateContent);
