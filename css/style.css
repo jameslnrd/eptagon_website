@@ -297,7 +297,6 @@ ul.landing-links li{
    width: 16px; height: 16px; margin-left: 10px; margin-right: 10px; border-radius: 50%; 
 }
 
-
 .bc-container{
    padding-top: 0%;
    display: flex;
@@ -306,7 +305,7 @@ ul.landing-links li{
 
 .bc-iframe{
       width: 100%;
-      height: 350px;;
+      height: 440px;;
       top: 0;
       left: 0;
       border: 0;
