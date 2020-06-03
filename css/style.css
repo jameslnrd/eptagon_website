@@ -16,6 +16,7 @@ body {
 
 }
 
+/* Custom appearance for the scrollbar */
 ::-webkit-scrollbar {
    width: 4px;
 }
@@ -52,6 +53,7 @@ body {
    margin-top: -3rem;
 }
 
+/* General dark theme */
 .dark{
    background-color: #17191c;
 }
@@ -71,7 +73,7 @@ body {
 }
 
 
-
+/* Arrow link icons */
 .arrow .svg-inline--fa {
    font-size: 1.5rem;
    color: #A88852;
@@ -127,6 +129,7 @@ body {
 }
 
 
+/* Links located at bottom right of landing page */
 .home-bottom{
    position: absolute;
    justify-content: center;
@@ -158,13 +161,6 @@ ul.landing-links li{
    font-size: 1.5rem;
 }
 
-/*.landing-links .svg-inline--fa:hover {
-   color: #D9CAA5;
-}*/
-
-
-
-
 
 /*-- Landing Page Content --*/
 .caption{
@@ -188,14 +184,6 @@ ul.landing-links li{
    width: 30rem;
 }
 
-.btn{
-   border-width: medium;
-   border-radius: 0;
-   text-transform: uppercase;
-   padding: .5rem 1.2rem ;
-}
-
-
 
 /*============= ABOUT SECTION =============*/
 
@@ -218,6 +206,11 @@ ul.landing-links li{
 
 .artist{
    background-color: #17191c;
+
+      font-size: 1.1rem;
+      font-weight: 300;
+      line-height: 1.9rem;
+   
 }
 
 
@@ -225,37 +218,12 @@ ul.landing-links li{
    transform: scale(1.05);
    filter: brightness(100%);
    -webkit-filter: brightness(110%);
-
 }
 
 .artist-item img {
    transition: transform .4s ease;
 
 }
-
-/*
-.artist .svg-inline--fa {
-   font-size: 1rem;
-   color: #A88852;
-   transition: transform 0.5s ease;
-}
-
-.artist .svg-inline--fa:hover {
-   transform: scale(1.2);
-}
-
-
-
-.artist-icon img {
-   transition: transform .4s ease;
-}
-
-.artist-icon .svg-inline--fa {
-   font-size: 1rem;
-   color: #A88852;
-   transition: transform 0.5s ease;
-}
-*/
 
 
 /*============= FEATURED SECTION =============*/
@@ -311,93 +279,6 @@ ul.landing-links li{
       border: 0;
       background-color: #17191c;
 }
-
-
-
-/*============= CONTACT SECTION =============*/
-
-.footer{
-   background-color: #17191c;
-}
-
-.foooter img{
-   height: 2rem;
-   width: 3rem;
-}
-
-.bottomlogo {
-   width: 18rem; 
-}
-
-.footer a{
-   color: white;
-   text-decoration: none;
-}
-
-ul.social{
-   list-style-type: none;
-   display: inline;
-   padding: 0;
-   margin: 0 auto;
-   max-width: 11.8rem;
-}
-
-ul.social li{
-   margin: 0 auto;
-   display: inline;
-   padding: 1.4rem;
-}
-
-.footer .svg-inline--fa {
-   font-size: 2.2rem;
-}
-
-.footer .svg-inline--fa:hover {
-   color: #A88852;
-}
-
-
-hr.socket {
-   border-top: .2rem solid #A88852;
-}
-
-.cryptedmail:after {
-   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
- }
-
- .cryptedmail:hover {
-   color: #A88852;
- }
-
-
-
-
-/*======== PARTNERS ==============*/
-
-.partners img{
-   width: 20%;
-   padding-bottom: 2rem;
-   transition: transform .3s ease;
-}
-
-.partners img:hover{
-   transform: scale(1.1);
-}
-
-.partners p{
-   line-height: 1.3rem;
-   font-weight: 300;
-   font-size: 1rem;
-}
-
-.partners a {
-   color: #A88852;
-   text-transform: uppercase;
-   text-decoration: none;
-   font-weight: 900;
-   font-size: 1.1rem; 
-}
-
 
 
 /*============= DATES SECTION ==================*/
@@ -457,6 +338,94 @@ hr.socket {
 }
 
 
+/*======== PARTNERS ==============*/
+
+.partners img{
+   width: 20%;
+   padding-bottom: 2rem;
+   transition: transform .3s ease;
+}
+
+.partners img:hover{
+   transform: scale(1.1);
+}
+
+.partners p{
+   line-height: 1.3rem;
+   font-weight: 300;
+   font-size: 1.1rem;
+}
+
+.partners a {
+   color: #A88852;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-weight: 900;
+   font-size: 1.1rem; 
+}
+
+
+/*============= CONTACT SECTION =============*/
+
+.footer{
+   background-color: #17191c;
+}
+
+.foooter img{
+   height: 2rem;
+   width: 3rem;
+}
+
+.bottomlogo {
+   width: 18rem; 
+}
+
+.footer a{
+   color: white;
+   text-decoration: none;
+}
+
+.footer p {
+   font-size: 1.1rem;
+   font-weight: 300;
+   line-height: 1.9rem;
+}
+
+ul.social{
+   list-style-type: none;
+   display: inline;
+   padding: 0;
+   margin: 0 auto;
+   max-width: 11.8rem;
+}
+
+ul.social li{
+   margin: 0 auto;
+   display: inline;
+   padding: 1.4rem;
+}
+
+.footer .svg-inline--fa {
+   font-size: 2.2rem;
+}
+
+.footer .svg-inline--fa:hover {
+   color: #A88852;
+}
+
+hr.socket {
+   border-top: .2rem solid #A88852;
+}
+
+.cryptedmail:after {
+   content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+ }
+
+ .cryptedmail:hover {
+   color: #A88852;
+ }
+
+
 /*============= MODAL WINDWOW =============*/
 
 /* The Modal (background) */
@@ -504,7 +473,6 @@ hr.socket {
  }
 
  .modal-text {
-   /*text-transform: uppercase;*/
    font-weight: 500;
    padding-bottom: 1rem;
    text-align: justify;
@@ -609,6 +577,13 @@ ul.social-proj li{
    }
  }
 
+ @media (max-width: 426px){
+
+   .bc-iframe{
+      height: 470px;
+   }
+}
+
 
 
 /*============= MEDIA QUERIES =============*/
@@ -644,6 +619,7 @@ ul.social-proj li{
         margin-left: 10px;
         margin-right: 10px;
     }
+
 
     .caption img{
       width: 60%;
@@ -683,7 +659,6 @@ ul.social-proj li{
    .footer .svg-inline--fa {
       font-size: 1.6rem;
    }
-
 
    
 
