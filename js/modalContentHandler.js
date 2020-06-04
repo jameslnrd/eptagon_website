@@ -290,6 +290,8 @@ A stronger creative component emerges through his recent work, as in the recent 
 document.getElementById("jonas").onclick = function(){
 	modalImg.src = this.src;
 
+	projCopy.innerHTML = "&copy;artwork: Camille Guérin";
+
 	projectName.textContent = "Jonas François";
 	projectGenre.textContent = "Saxophonist / Electronic Music Producer";
 	projectDescr.innerHTML = 
