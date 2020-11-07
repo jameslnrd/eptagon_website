@@ -84,6 +84,31 @@ The only valid rule: always repeat mistakes to make them sound intentional."
 	document.getElementById("mod-web-link").href = "https://orcaescapes.github.io/";
 }
 
+
+document.getElementById("flaca").onclick = function(){
+	modalImg.src = this.src;
+	projCopy.innerHTML = "&copy;photo: Orane Schroetter";
+
+
+	projectName.textContent = "Flaca Boonse";
+	projectGenre.textContent = "Musical & Digital Artist";
+
+	projectDescr.innerHTML = 
+	"Flaca, a name that translates to \"skinny\" in Spanish and is also an Argentinian expression comparable to \"whaddup, man?\", is a whimsical spirit who sculpts her writing in poetry, irony and sordid tales. Boonse is a reference to the “Mary Boone” painting by JM Basquiat. <br/>\
+	Flaca Boonse blows and sings through pipes into water, in search of aquatic melodies and ambiences. She films the water of aquariums to control digital effects. She projects images into spinning bicycle wheels. Often in the dark, she plays with lights, shadows, mixed with video. She lays tables with all kinds of materials, water, plastic, metal, wood or metal, creating interactions among them with tools such as piezo microphones, sensors, and electronics. <br/>\
+	Her laboratory consists of her voice, music, sounds, noises, samples and visuals. Her work is driven by the encounters between different materials, and the will to transform digital tools into living and playful entities."
+
+
+	document.getElementById("mod-fb-li").style.display = "inline";
+	document.getElementById("mod-fb-link").href = "https://www.facebook.com/Flacaoriginalmusic";
+	document.getElementById("mod-ins-li").style.display = "inline";
+	document.getElementById("mod-ins-link").href = "https://www.instagram.com/flaca_boonse/";
+	document.getElementById("mod-sc-li").style.display = "inline";
+	document.getElementById("mod-sc-link").href = "https://soundcloud.com/flacaoriginalmusic";
+	document.getElementById("mod-web-li").style.display = "inline";
+	document.getElementById("mod-web-link").href = "http://www.flaca.fr";
+}
+
 document.getElementById("epitaphe").onclick = function(){
 	modalImg.src = this.src;
 	projCopy.innerHTML = "&copy;artwork: Petri Ala-Maunus";
@@ -118,7 +143,7 @@ document.getElementById("gaillardon").onclick = function(){
 	projectDescr.innerHTML = 
 "Nico Gaillardon is a pluridisciplinary artist at the head of several musical projects (Paranoid Summer, Low Reality, Noise for Souls). Also expressing his work  through drawings, installations and animation films, he creates a world of melancholic and sometimes violent poetry, creating atmospheres reminescent of an elusive road movie.<br/>\
 With <b>Paranoid Summer</b>, he invites the listener into a universe of noise energy, inside which words and chants emerge from dense layers of sound and chaotic melodies, accompanied by roughly edited video footage.<br/>\
-With <b>Low Reality</b>,  he creates a visual and sonic universe with drummer Morgan Cornebert, in which sheets of noise slide progressively towards hypnotising rythms, samples, and glitches to yield a state of electric transe.<br/>\
+With <a href='https://www.lowreality.live/' target='_blank'><b>Low Reality</b></a>,  he creates a visual and sonic universe with drummer Morgan Cornebert, in which sheets of noise slide progressively towards hypnotising rythms, samples, and glitches to yield a state of electric transe.<br/>\
 The <b>Noise for Souls</b> project, with Jules Bocquet and Pauline Auby, offers intimate live musical and audio-visual performances: a space where ephemeral collaborations may take place between musicians and videographers, during the time of a session."
 
 
