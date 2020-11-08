@@ -12,9 +12,9 @@ var projectDescr = document.getElementById("project-descr");
 var projCopy = document.getElementById("proj-copyright");
 
 document.getElementById("barus").onclick = function(){
-	modalImg.src = this.src;
+	//console.log("clicked");
+	modalImg.src = "img/artists/barus2.jpg";
 	projCopy.innerHTML = "&copy;photo: Yog-Sothoth Photography";
-
 
 	projectName.textContent = "Barús";
 	projectGenre.textContent = "Death Metal";
@@ -37,7 +37,7 @@ The band, described by reviewers as <i>\"Autopsy reinterpreted by Meshuggah\"</i
 }
 
 document.getElementById("maieutiste").onclick = function(){
-	modalImg.src = this.src;
+	modalImg.src = "img/artists/maieutiste.jpg";
 	projCopy.innerHTML = "&copy;photo: Kaerell";
 
 
@@ -60,8 +60,9 @@ Through a poetic approach, their new offering <b>Veritas</b> deals with the noti
 	document.getElementById("mod-ins-link").href = "https://www.instagram.com/maieutiste_band/";
 }
 
+
 document.getElementById("orcae").onclick = function(){
-	modalImg.src = this.src;
+	modalImg.src = "img/artists/orcae.jpg";
 	projCopy.innerHTML = "&copy;photo: Niflheim";
 
 
@@ -86,7 +87,7 @@ The only valid rule: always repeat mistakes to make them sound intentional."
 
 
 document.getElementById("flaca").onclick = function(){
-	modalImg.src = this.src;
+	modalImg.src = "img/artists/flaca_tmp.png";
 	projCopy.innerHTML = "&copy;photo: Orane Schroetter";
 
 
@@ -110,7 +111,7 @@ document.getElementById("flaca").onclick = function(){
 }
 
 document.getElementById("epitaphe").onclick = function(){
-	modalImg.src = this.src;
+	modalImg.src = "img/artists/epitaphe.jpg";
 	projCopy.innerHTML = "&copy;artwork: Petri Ala-Maunus";
 
 
@@ -133,7 +134,7 @@ I, in its doomed torment, is a distraught journey through blackness, fury and me
 }
 
 document.getElementById("gaillardon").onclick = function(){
-	modalImg.src = this.src;
+	modalImg.src = "img/artists/ng.jpg";
 	projCopy.innerHTML = "&copy;photo: Jules Bocquet";
 
 
@@ -165,7 +166,7 @@ The <b>Noise for Souls</b> project, with Jules Bocquet and Pauline Auby, offers 
 
 
 document.getElementById("iranon").onclick = function(){
-	modalImg.src = this.src;
+	modalImg.src = "img/artists/iranon2.jpg";
 
 	projCopy.innerHTML = "&copy;photo: Ksenya";
 
@@ -187,7 +188,7 @@ His debut album “Painting the Sound” was released in 2011. This ambient reco
 
 
 document.getElementById("liquidflesh").onclick = function(){
-	modalImg.src = this.src;
+	modalImg.src = "img/artists/liquidflesh.jpg";
 
 	projectName.textContent = "Liquid Flesh";
 	projectGenre.textContent = "Purulent Death Metal";
@@ -214,7 +215,7 @@ The trio joins the artist collective Eptagon in 2019, and starts recording a sec
 }
 
 document.getElementById("james").onclick = function(){
-	modalImg.src = this.src;
+	modalImg.src = "img/artists/james.jpg";
 	projCopy.innerHTML = "&copy;photo: No Tsrd";
 
 
@@ -240,7 +241,7 @@ He strives to capture the raw power and dynamics of each band and the singularit
 }
 
 document.getElementById("demenseed").onclick = function(){
-	modalImg.src = this.src;
+	modalImg.src = "img/artists/demenseed.jpg";
 	projCopy.innerHTML = "&copy;photo: Demenseed";
 
 
@@ -269,7 +270,7 @@ In 2018, after some member replacements, the band releases 3 different EPs: “B
 }
 
 document.getElementById("fia").onclick = function(){
-	modalImg.src = this.src;
+	modalImg.src = "img/artists/fia.jpg";
 	projCopy.innerHTML = "&copy;photo: Marchand Emmanuel";
 
 
@@ -290,7 +291,7 @@ document.getElementById("fia").onclick = function(){
 
 
 document.getElementById("jubo").onclick = function(){
-	modalImg.src = this.src;
+	modalImg.src = "img/artists/jubo.jpg";
 	projCopy.innerHTML = "&copy;photo: Pauline Aubry";
 
 
@@ -313,7 +314,7 @@ A stronger creative component emerges through his recent work, as in the recent 
 
 
 document.getElementById("jonas").onclick = function(){
-	modalImg.src = this.src;
+	modalImg.src = "img/artists/jonas.jpg";
 
 	projCopy.innerHTML = "&copy;artwork: Camille Guérin";
 
@@ -334,6 +335,7 @@ He is the manager of two music labels: <b>Raw Paradigm</b> and <b>Kraken Records
 
 
 }
+
 
 modalImg.onclick = function() {
 	modalfadeOut();
@@ -386,7 +388,7 @@ function hasClass(element, cls) {
 
 $(document).click(function(event) {
 	$target = $(event.target);
-	if(!hasClass($(event.target)[0], 'artist-image')){
+	if(!hasClass($(event.target)[0], 'artist-image') && !hasClass($(event.target)[0], 'artist-name')){
 		if(!$target.closest('#proj-info').length)
 			if($("#myModal").is(":visible") === true)
 				if($('#proj-content').is(":visible"))

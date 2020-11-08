@@ -204,6 +204,45 @@ ul.landing-links li{
 
 /*============= ARTIST SECTION =============*/
 
+.artist-overlay{
+   background-color: #222529;
+   transition: .5s ease;
+   opacity: 1;
+   position: relative;
+   display:flex;
+   cursor: pointer;
+}
+
+
+.artist-name{
+   color: #FFFFFF;
+   font-size: 1.8rem;
+   position: absolute;
+   font-weight: 900;
+   text-transform: uppercase;
+   text-shadow: 0px 0px 6px #17191c;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   text-align: center;
+   opacity: 0;
+   transition: .5s ease;
+}
+
+.artist-overlay:hover .artist-name{
+   opacity: 0.9;
+}
+
+
+.artist-overlay:hover .artist-image{
+   transform: scale(1.05);
+   filter: brightness(100%);
+   -webkit-filter: brightness(110%);
+}
+
+
 .artist{
    background-color: #17191c;
 
@@ -214,15 +253,15 @@ ul.landing-links li{
 }
 
 
+/*
 .artist-item img:hover{
    transform: scale(1.05);
    filter: brightness(100%);
    -webkit-filter: brightness(110%);
 }
-
+*/
 .artist-item img {
    transition: transform .4s ease;
-
 }
 
 
@@ -590,6 +629,12 @@ ul.social-proj li{
 
 /* Medium (md) devices (tablets, 768px and under) */
 @media (max-width: 767.98px) {
+
+   .artist-overlay:hover .artist-name{
+      opacity: 0;
+   }
+   
+
    .caption{
       top: 34%;
    }
